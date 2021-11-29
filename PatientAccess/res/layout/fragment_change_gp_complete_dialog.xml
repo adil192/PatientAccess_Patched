@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/fragment_change_gp_complete_dialog_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog_round_corners" android:paddingTop="@dimen/dp_48" android:paddingBottom="@dimen/margin_38" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/margin_medium" android:paddingEnd="@dimen/margin_medium">
+        <TextView android:gravity="start" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/txt_change_gp_complete_title" style="@style/NavyBoldDialogTitle" />
+        <TextView android:gravity="start" android:id="@id/tv_message_one" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big" style="@style/DarkGrayRegularText" />
+        <TextView android:gravity="start" android:id="@id/tv_message_two" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" style="@style/DarkGrayRegularText" />
+        <Button android:id="@id/btn_okay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_huge" android:text="@string/ok_button" style="@style/PinkButton" />
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+</FrameLayout>

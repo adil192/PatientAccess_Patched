@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/default_text_size" android:orientation="vertical" android:id="@id/tv_appointment_section_title" android:tag="layout/item_title_0" android:background="@color/user_session_content_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/line_spacing_item_title" style="@style/NavyBoldTitle"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/home_section_appointment_0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/desc_next_appt" android:importantForAccessibility="yes"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium">
+        <TextView android:gravity="center_vertical" android:id="@id/title" android:layout_width="0.0dip" android:layout_height="@dimen/margin_huge" android:text="@string/text_appointment_next_title" android:importantForAccessibility="no" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/NavyLatoBlack18" />
+        <ImageView android:id="@id/requestPrescriptionButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_rounded_plus" android:contentDescription="@string/desc_book_more" android:importantForAccessibility="yes" android:paddingStart="@dimen/padding_small" android:paddingEnd="@dimen/padding_small" android:accessibilityTraversalAfter="@id/section_content_state" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout android:tag="binding_1" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" app:layout_constraintTop_toBottomOf="@id/title">
+        <ProgressBar android:layout_gravity="center" android:id="@id/pb_appointment" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_huge" android:layout_marginBottom="@dimen/margin_huge" />
+        <androidx.cardview.widget.CardView android:id="@id/home_section_no_data_state" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/radius_12" app:cardElevation="@dimen/card_elevation" app:contentPaddingBottom="@dimen/padding_big" app:contentPaddingLeft="@dimen/home_card_no_content_padding_horizontal" app:contentPaddingRight="@dimen/home_card_no_content_padding_horizontal" app:contentPaddingTop="@dimen/padding_big" style="@style/CardViewStyle">
+            <FrameLayout android:tag="binding_2" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/section_error_state" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:gravity="center" android:paddingTop="@dimen/padding_4.5" android:paddingBottom="@dimen/padding_4.5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/error_api_fail" android:lineSpacingMultiplier="1.5" style="@style/DefaultLatoBoldText18" />
+                </LinearLayout>
+                <include android:id="@id/section_empty_state" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/home_section_no_value" />
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+        <include android:id="@id/section_content_state" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/card_appointment" />
+    </FrameLayout>
+</LinearLayout>

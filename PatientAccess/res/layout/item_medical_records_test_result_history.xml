@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:tag="layout/item_medical_records_test_result_history_0" android:paddingTop="@dimen/test_result_value_padding_vertical" android:paddingBottom="@dimen/test_result_value_padding_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/result_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_size_18" android:id="@id/tv_test_result_value" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/NavyRegularText" />
+        <com.patientaccess.medicalrecords.widget.AbnormalStatusView android:id="@id/range_status_view" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_small" />
+    </LinearLayout>
+    <TextView android:id="@id/tv_normal_range_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_smallest" android:text="@string/text_test_result_normal_range" android:layout_below="@id/result_container" style="@style/DarkGrayRegularText" />
+    <TextView android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBaseline="@id/tv_normal_range_title" android:layout_toEndOf="@id/tv_normal_range_title" style="@style/DarkNavyRegularText" />
+    <TextView android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_smallest" android:layout_below="@id/tv_normal_range_title" style="@style/DarkGrayRegularText" />
+</RelativeLayout>

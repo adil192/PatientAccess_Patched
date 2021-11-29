@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:tag="layout/fragment_promo_section_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.patientaccess.util.ui.EnhancedWrapContentViewPager android:id="@id/vp_banner_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="yes" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.tabs.TabLayout android:id="@id/tab_layout" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:tabBackground="@drawable/ic_dot_indicator" app:tabGravity="center" app:tabIndicatorHeight="0.0dip" app:tabPaddingEnd="16.0dip" app:tabPaddingStart="0.0dip" />
+</androidx.constraintlayout.widget.ConstraintLayout>

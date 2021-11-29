@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:tag="layout/item_patient_0" android:background="@android:color/white" android:paddingTop="@dimen/padding_big" android:paddingBottom="@dimen/padding_big" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/tv_patient_name" android:tag="binding_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/margin_big" style="@style/NavyRegularText" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/img_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/margin_big" app:srcCompat="@drawable/ic_arrow_right" />
+</LinearLayout>

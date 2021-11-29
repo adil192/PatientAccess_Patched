@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/no_size" app:cardElevation="@dimen/card_elevation" style="@style/CardViewStyle">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/padding_medium" android:paddingBottom="@dimen/padding_big" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_success" />
+            <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/text_form_submitted" style="@style/NavyBoldSubTitle" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <TextView android:layout_gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big" android:text="@string/text_what_next" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" style="@style/NavyBoldSubTitle" />
+    <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big" android:text="@string/text_for_submitted_advice" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" style="@style/NavyRegularText" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/btn_okay" android:layout_marginTop="@dimen/margin_most" android:text="@string/text_triage_go_home" style="@style/PinkButton" />
+</LinearLayout>

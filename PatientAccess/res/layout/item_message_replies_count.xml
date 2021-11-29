@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/item_message_replies_count_0" android:background="@android:color/transparent" android:paddingTop="@dimen/padding_small" android:paddingBottom="@dimen/padding_small" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_size_18" android:textStyle="bold" android:textColor="@color/dark_gray" android:id="@id/tv_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:paddingStart="@dimen/padding_small" android:paddingEnd="@dimen/padding_small" style="@style/LatoFontFamily" />
+    <View android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_centerVertical="true" android:layout_toEndOf="@id/tv_count" />
+    <View android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_centerVertical="true" android:layout_toStartOf="@id/tv_count" />
+</RelativeLayout>

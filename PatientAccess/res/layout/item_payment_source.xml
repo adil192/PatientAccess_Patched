@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/payment_card_container" android:tag="layout/item_payment_source_0" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/radius_12" app:cardElevation="2.0dip" style="@style/CardViewStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/section_container" android:tag="binding_1" android:paddingTop="@dimen/padding_medium" android:paddingBottom="@dimen/padding_medium" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/padding_big" android:paddingEnd="@dimen/margin_smallest">
+        <com.patientaccess.util.ui.MaskedPaymentCardView android:id="@id/masked_card_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <androidx.appcompat.widget.AppCompatCheckBox android:id="@id/checkbox_icon" android:tag="binding_2" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/ic_blue_selector_radio_button" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/margin_big" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

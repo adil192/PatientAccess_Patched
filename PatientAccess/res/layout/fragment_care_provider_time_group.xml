@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:tag="layout/fragment_care_provider_time_group_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/book_appointment_clinician_container_margin_top" android:layout_marginBottom="@dimen/book_appointment_clinician_container_margin_bottom" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_size_20" android:textColor="@color/book_appointment_select_time_no_clinicians_font" android:gravity="center" android:id="@id/tv_no_available_appointments" android:visibility="gone" android:layout_width="@dimen/book_appointment_select_time_no_clinicians_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/no_available_time_slots" android:layout_centerHorizontal="true" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_time_slots" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</RelativeLayout>

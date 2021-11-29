@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/fragment_triage_form_start_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="top" android:id="@id/progress_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="true" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+    <LinearLayout android:orientation="vertical" android:id="@id/triage_form_available" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.core.widget.NestedScrollView android:id="@id/start_page_container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:id="@id/focus_view" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="0.0dip">
+                    <requestFocus />
+                </View>
+                <TextView android:id="@id/tv_triage_form_description" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" style="@style/NavyRegularText" />
+                <TextView android:id="@id/tv_triage_before_you_start" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big" android:text="@string/text_before_you_start" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" style="@style/NavyBoldTitle" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium">
+                    <ImageView android:background="@drawable/ic_bullet_accent" android:layout_width="@dimen/margin_6" android:layout_height="@dimen/margin_6" android:layout_marginTop="@dimen/margin_small" />
+                    <TextView android:id="@id/tv_triage_non_urgent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawablePadding="@dimen/padding_small" android:lineSpacingMultiplier="1.3" android:layout_marginStart="@dimen/padding_small" style="@style/NavyRegularText" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium">
+                    <ImageView android:background="@drawable/ic_bullet_accent" android:layout_width="@dimen/margin_6" android:layout_height="@dimen/margin_6" android:layout_marginTop="@dimen/margin_small" />
+                    <TextView android:id="@id/tv_triage_info_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/text_start_page_info_1" android:drawablePadding="@dimen/padding_small" android:lineSpacingMultiplier="1.3" android:layout_marginStart="@dimen/padding_small" style="@style/NavyRegularText" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium">
+                    <ImageView android:background="@drawable/ic_bullet_accent" android:layout_width="@dimen/margin_6" android:layout_height="@dimen/margin_6" android:layout_marginTop="@dimen/margin_small" />
+                    <TextView android:id="@id/tv_triage_info_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/text_start_page_info_2" android:drawablePadding="@dimen/padding_small" android:lineSpacingMultiplier="1.3" android:layout_marginStart="@dimen/padding_small" style="@style/NavyRegularText" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium">
+                    <ImageView android:background="@drawable/ic_bullet_accent" android:layout_width="@dimen/margin_6" android:layout_height="@dimen/margin_6" android:layout_marginTop="@dimen/margin_small" />
+                    <TextView android:id="@id/tv_triage_info_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/text_start_page_info_3" android:drawablePadding="@dimen/padding_small" android:lineSpacingMultiplier="1.3" android:layout_marginStart="@dimen/padding_small" style="@style/NavyRegularText" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium">
+                    <ImageView android:background="@drawable/ic_bullet_accent" android:layout_width="@dimen/margin_6" android:layout_height="@dimen/margin_6" android:layout_marginTop="@dimen/margin_small" />
+                    <TextView android:id="@id/tv_triage_info_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/text_start_page_info_4" android:drawablePadding="@dimen/padding_small" android:lineSpacingMultiplier="1.3" android:layout_marginStart="@dimen/padding_small" style="@style/NavyRegularText" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium">
+                    <ImageView android:background="@drawable/ic_bullet_accent" android:layout_width="@dimen/margin_6" android:layout_height="@dimen/margin_6" android:layout_marginTop="@dimen/margin_small" />
+                    <TextView android:id="@id/tv_triage_info_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawablePadding="@dimen/padding_small" android:lineSpacingMultiplier="1.3" android:layout_marginStart="@dimen/padding_small" style="@style/NavyRegularText" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium">
+                    <ImageView android:background="@drawable/ic_bullet_accent" android:layout_width="@dimen/margin_6" android:layout_height="@dimen/margin_6" android:layout_marginTop="@dimen/margin_small" />
+                    <TextView android:id="@id/tv_triage_info_6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/text_start_page_info_6" android:drawablePadding="@dimen/padding_small" android:lineSpacingMultiplier="1.3" android:layout_marginStart="@dimen/padding_small" style="@style/NavyRegularText" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium">
+                    <ImageView android:background="@drawable/ic_bullet_accent" android:layout_width="@dimen/margin_6" android:layout_height="@dimen/margin_6" android:layout_marginTop="@dimen/margin_small" />
+                    <TextView android:id="@id/tv_triage_info_7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/text_start_page_info_7" android:drawablePadding="@dimen/padding_small" android:lineSpacingMultiplier="1.3" android:layout_marginStart="@dimen/padding_small" style="@style/NavyRegularText" />
+                </LinearLayout>
+                <include android:id="@id/layout_related_resource" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/triage_item_related_resource" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_start_button" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:id="@id/top_divider" android:visibility="visible" android:layout_width="fill_parent" android:elevation="1.0dip" style="@style/Divider" />
+            <Button android:enabled="false" android:layout_gravity="center_horizontal" android:id="@id/btn_form_start" android:layout_width="fill_parent" android:layout_marginTop="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_medium" android:layout_marginStart="@dimen/margin_big" android:layout_marginEnd="@dimen/margin_big" style="@style/PinkButton" />
+        </LinearLayout>
+    </LinearLayout>
+    <include android:id="@id/triage_form_unavailable" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/fragment_triage_form_start_unavailable" />
+    <include android:layout_gravity="center" android:id="@id/error_container" android:background="@color/background_gray" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/view_triage_error_layout" />
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/vg_proxy_user_alert" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.cardview.widget.CardView android:id="@id/toolbarLayout" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardElevation="@dimen/card_radius" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/CardViewStyle">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_height" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/vg_proxy_user_alert">
+                <androidx.appcompat.widget.AppCompatTextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/nominate_a_pharmacy" android:layout_marginEnd="@dimen/margin_most" style="@style/NavyBoldTitle" />
+            </androidx.appcompat.widget.Toolbar>
+            <FrameLayout android:id="@id/progress_container" android:background="@color/progress_flow_progress_secondary_color" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_progress_flow_radius" android:layout_marginTop="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_medium" android:layout_marginStart="@dimen/margin_big" android:layout_marginEnd="@dimen/margin_big">
+                <ProgressBar android:id="@id/pharmacy_progress_steps" android:layout_width="fill_parent" android:layout_height="fill_parent" android:max="3" android:progress="1" android:progressDrawable="@drawable/bg_progress_booking" style="@android:style/Widget.ProgressBar.Horizontal" />
+            </FrameLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <FrameLayout android:id="@id/container_fragment" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbarLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

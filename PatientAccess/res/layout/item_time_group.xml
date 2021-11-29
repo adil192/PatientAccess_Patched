@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/item_time_group_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/book_appointment_clinician_container_margin_top" android:layout_marginBottom="@dimen/book_appointment_clinician_container_margin_bottom" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_time_group_clinician" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DarkNavyRegularText" />
+    <TextView android:gravity="center_vertical" android:id="@id/tv_time_group_location" android:tag="binding_1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/book_appointment_time_group_location_margin" android:layout_marginBottom="@dimen/book_appointment_time_group_location_margin" android:drawablePadding="@dimen/padding_smallest" style="@style/DarkNavyRegularText" />
+    <TextView android:gravity="center_vertical" android:id="@id/tv_time_group_session_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_smallest" android:drawablePadding="@dimen/padding_smallest" style="@style/DarkGrayRegularText" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_time_slots" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

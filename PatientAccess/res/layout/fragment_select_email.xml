@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_select_email_0" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/forgot_email_step_3_title" android:paddingStart="@dimen/padding_medium" android:paddingEnd="@dimen/padding_medium" style="@style/NavyBoldTitle" />
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_big" android:text="@string/forgot_email_step_3_sub_title" android:paddingStart="@dimen/padding_medium" android:paddingEnd="@dimen/padding_medium" style="@style/DarkGrayRegularText" />
+    <View style="@style/Divider" />
+    <ProgressBar android:id="@id/progress_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="true" android:paddingStart="@dimen/padding_medium" android:paddingEnd="@dimen/padding_medium" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_emails" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <View style="@style/Divider" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/item_prescription_history_0" android:paddingTop="@dimen/request_prescription_item_history_padding_vertical" android:paddingBottom="@dimen/request_prescription_item_history_padding_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/request_prescription_item_history_padding_horizontal" android:paddingEnd="@dimen/request_prescription_item_history_padding_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/request_prescription_font_size" android:textColor="@color/prescription_font_color" android:id="@id/tv_prescription_date" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/request_prescription_title_font_size" android:textColor="@color/prescription_title_font_color" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/request_prescription_item_history_title_margin_top" />
+    <TextView android:textSize="@dimen/request_prescription_font_size" android:textColor="@color/prescription_font_color" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/request_prescription_item_history_details_margin_top" />
+</LinearLayout>

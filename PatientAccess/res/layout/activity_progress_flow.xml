@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/activity_progress_flow_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/navigation_panel_container">
+        <androidx.cardview.widget.CardView android:id="@id/toolbarLayout" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardElevation="@dimen/card_radius" style="@style/CardViewStyle">
+            <LinearLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <FrameLayout android:id="@id/vg_proxy_user_alert" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <FrameLayout android:id="@id/toolbar_container" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <include android:id="@id/practice_message_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" layout="@layout/card_practice_message" />
+                <View android:id="@id/border_view" android:background="@color/white" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="1.0dip" android:layout_height="1.0dip" />
+                <com.patientaccess.appointments.widget.FlowProgressView android:id="@id/flow_progress_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <FrameLayout android:id="@id/container_fragment" android:background="@color/user_session_content_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:layout_gravity="center" android:id="@id/pb_flow_creation" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/flow_retry_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="center" android:id="@id/tv_flow_error_message" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/NavyBoldTitle" />
+                <Button android:id="@id/btn_retry_flow_creation" android:layout_marginTop="@dimen/margin_medium" android:text="@string/text_retry" style="@style/PinkButton" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/navigation_panel_container" android:tag="binding_2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include android:id="@id/navigation_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/view_navigation_panel" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:tag="layout/fragment_medications_0" android:background="@color/user_session_content_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/bottom_request_prescription_button_container" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <View style="@style/Divider" />
+            <Button android:layout_gravity="center_horizontal" android:id="@id/btn_request_prescription" android:clickable="false" android:layout_width="wrap_content" android:layout_marginTop="@dimen/medication_request_prescription_margin_top" android:layout_marginBottom="@dimen/medication_request_prescription_margin_top" android:text="@string/text_button_medication_request_prescription" android:paddingStart="@dimen/padding_most" android:paddingEnd="@dimen/padding_most" style="@style/PinkButton" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_medications" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_request_prescription_button_container" android:paddingStart="@dimen/padding_medium" android:paddingEnd="@dimen/padding_medium" />
+    </RelativeLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/pb_medications" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/container_no_medications" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:layout_width="@dimen/health_record_categories_no_items_icon_size" android:layout_height="@dimen/health_record_categories_no_items_icon_size" app:srcCompat="@drawable/ic_medical_record_no_value" />
+        <TextView android:gravity="center_horizontal" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big" style="@style/NavyBoldTitle" />
+    </LinearLayout>
+</FrameLayout>

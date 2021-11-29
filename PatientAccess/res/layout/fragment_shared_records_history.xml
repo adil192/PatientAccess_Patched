@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_shared_records_history_0" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_shared_record_title" android:layout_marginStart="@dimen/margin_medium" style="@style/NavyBoldTitle" />
+    <View android:layout_marginTop="@dimen/margin_medium" style="@style/Divider" />
+    <androidx.core.widget.NestedScrollView android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <FrameLayout android:background="@color/user_session_content_bg" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/padding_medium" android:paddingEnd="@dimen/padding_medium">
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/tv_no_records_history" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_no_shared_record_history" style="@style/NavyBoldTitle" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/pb_records_history" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/records_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_shared_records" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_shared_records_history" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/margin_small" />
+            </LinearLayout>
+        </FrameLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

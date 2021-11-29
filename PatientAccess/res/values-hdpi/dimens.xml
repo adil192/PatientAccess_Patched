@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ciw_stripe_edit_text_size">15.0sp</dimen>
+    <dimen name="login_button_margin_vertical">8.0dip</dimen>
+    <dimen name="login_input_margin_top">8.0dip</dimen>
+    <dimen name="login_inputs_margin_top">8.0dip</dimen>
+    <dimen name="login_top_container_margin_top">0.0dip</dimen>
+    <dimen name="medical_item_name_max_width">200.0dip</dimen>
+    <dimen name="on_boarding_image_height">200.0dip</dimen>
+</resources>

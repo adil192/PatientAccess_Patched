@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:tag="layout/fragment_video_appointment_vidyo_call_0" android:background="@color/color_waiting_room_header_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/video_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:id="@id/tv_remote_camera_waiting" android:background="@drawable/bg_video_preview" android:padding="@dimen/padding_big" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" style="@style/NavyBoldTitle" />
+    <androidx.cardview.widget.CardView android:id="@id/cv_preview_container" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium" android:minWidth="@dimen/video_appointment_preview_width" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/margin_medium" android:layout_alignParentStart="true" app:cardBackgroundColor="@android:color/transparent" app:cardCornerRadius="@dimen/video_appointment_preview_radius">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/preview_container" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintDimensionRatio="@string/preview_window_ratio" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <RelativeLayout android:id="@id/rl_self_mute" android:background="@drawable/bg_video_mic" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_self_mute" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:srcCompat="@drawable/ic_video_self_mute" />
+            </RelativeLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout android:id="@id/rl_participant_details" android:background="@color/color_video_call_header_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_size_18" android:textColor="@color/white" android:id="@id/tv_video_call_practitioner_name" android:padding="@dimen/padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toStartOf="@id/cm_video_call_timer" style="@style/LatoFontFamily" />
+        <Chronometer android:textSize="@dimen/font_size_18" android:textColor="@color/white" android:id="@id/cm_video_call_timer" android:padding="@dimen/padding_medium" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" style="@style/LatoFontFamily" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/control_panel" android:padding="@dimen/padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <androidx.appcompat.widget.AppCompatCheckBox android:id="@id/toggle_mic_availability" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/ic_mute_toggle" android:layout_centerHorizontal="true" />
+        <androidx.appcompat.widget.AppCompatImageButton android:id="@id/btn_switch_camera" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/appointment_margin_50" android:layout_toEndOf="@id/toggle_mic_availability" app:srcCompat="@drawable/ic_video_call_switch_camera" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/fl_video_empty_bg_container" android:background="@color/color_waiting_room_header_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_consultation_detail_0" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/consultation_details_title" android:layout_marginStart="@dimen/margin_medium" style="@style/NavyBoldTitle" />
+    <View android:layout_marginTop="@dimen/margin_medium" style="@style/Divider" />
+    <ProgressBar android:id="@id/pb_consultation_details" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="true" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+    <TextView android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big" android:layout_marginStart="@dimen/margin_big" style="@style/NavyBoldTitle" />
+    <TextView android:textStyle="bold" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_smallest" android:layout_marginStart="@dimen/margin_big" style="@style/DarkNavyRegularText" />
+    <androidx.appcompat.widget.AppCompatTextView android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:drawablePadding="@dimen/padding_small" android:layout_marginStart="@dimen/margin_big" style="@style/DarkGrayRegularText" />
+    <View android:layout_marginTop="@dimen/margin_medium" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" style="@style/Divider" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_consultations_details" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/padding_medium" android:paddingEnd="@dimen/padding_medium" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_no_search_result_container" android:tag="layout/fragment_patient_care_service_no_search_result_0" android:background="@color/user_session_content_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_12" android:text="@string/text_no_results_found" android:tooltipText="@string/text_no_results_found" style="@style/NavyRegularBoldBigText" />
+    <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_no_search_result_description" android:lineSpacingMultiplier="1.5" android:layout_marginStart="@dimen/margin_38" android:layout_marginEnd="@dimen/margin_38" android:tooltipText="@string/text_no_search_result_description" style="@style/DarkGrayRegularText" />
+</LinearLayout>

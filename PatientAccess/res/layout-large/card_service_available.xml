@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:orientation="vertical" android:id="@id/service_container" android:tag="layout-large/card_service_available_0" android:background="@android:color/white" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/radius_12" app:cardElevation="@dimen/card_elevation" app:contentPadding="@dimen/padding_medium" style="@style/CardViewStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium" style="@style/NavyBoldTitle" />
+        <View style="@style/Divider" />
+        <TextView android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" style="@style/DarkGrayRegularText" />
+        <com.patientaccess.profile.widget.ServiceStatusView android:id="@id/btn_service_status" android:tag="binding_3" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

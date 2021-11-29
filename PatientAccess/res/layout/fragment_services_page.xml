@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/fragment_services_page_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBarLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="8.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/img_back" android:background="@android:color/transparent" android:paddingTop="@dimen/margin_header_20" android:paddingBottom="@dimen/margin_header_20" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_back" android:paddingStart="@dimen/margin_medium" android:paddingEnd="@dimen/margin_medium" />
+            <TextView android:id="@id/tv_service_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium" android:text="@string/select_a_service" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" style="@style/NavyBoldTitle" />
+        </LinearLayout>
+        <com.google.android.material.tabs.TabLayout android:textStyle="bold" android:id="@id/tabBarLayout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" app:tabIndicatorColor="@color/pink" app:tabSelectedTextColor="@color/pink" app:tabTextAppearance="@style/TabbarTextStyle" style="@style/TabbarTextStyle" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.patientaccess.appointments.widget.NoSwipeViewPager android:id="@id/noSwipeViewPager" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/appBarLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/item_editable_payment_source_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/delete_button" android:tag="binding_1" android:background="@drawable/ic_minus_circle_red_button_wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/margin_medium" />
+    <RelativeLayout android:id="@id/section_container" android:tag="binding_2" android:paddingTop="@dimen/padding_medium" android:paddingBottom="@dimen/padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/padding_big" android:paddingEnd="@dimen/padding_medium">
+        <com.patientaccess.util.ui.MaskedPaymentCardView android:id="@id/masked_card_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toStartOf="@id/make_default_txt_vw" />
+        <TextView android:id="@id/make_default_txt_vw" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/NavyBoldSubTitle" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/appointment_type_container" android:tag="layout/view_date_0" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="yes"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/date_month_text_size" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_month" android:paddingTop="@dimen/padding_smallest" android:paddingBottom="@dimen/padding_smallest" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no" android:paddingStart="@dimen/date_month_padding_horizontal" android:paddingEnd="@dimen/date_month_padding_horizontal" />
+    <TextView android:textSize="@dimen/default_screen_title_text_size" android:textStyle="bold" android:gravity="center" android:id="@id/tv_day" android:background="@drawable/bg_date_view_day" android:paddingTop="@dimen/padding_small" android:paddingBottom="@dimen/padding_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no" />
+</LinearLayout>

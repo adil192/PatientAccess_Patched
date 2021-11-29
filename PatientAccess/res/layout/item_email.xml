@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/email_container" android:tag="layout/item_email_0" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:ellipsize="end" android:id="@id/text_email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big" android:layout_marginBottom="@dimen/margin_big" android:layout_weight="1.0" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_small" style="@style/NavyRegularBigText" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_width="@dimen/email_image_width" android:layout_height="@dimen/email_image_height" android:layout_weight="0.0" android:layout_marginStart="@dimen/margin_big" android:layout_marginEnd="@dimen/margin_big" app:srcCompat="@drawable/ic_arrow_right" />
+</LinearLayout>

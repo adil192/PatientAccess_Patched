@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="Notification Menu" android:importantForAccessibility="yes"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_notifications" />
+    <TextView android:textSize="@dimen/count_text" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_count" android:background="@drawable/bg_red_circle" android:padding="@dimen/count_padding" android:layout_width="@dimen/count_width" android:layout_height="@dimen/count_width" android:layout_marginStart="@dimen/margin_small" />
+</RelativeLayout>

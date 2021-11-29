@@ -1,0 +1,66 @@
+.class public abstract Lcom/patientaccess/o/n4;
+.super Landroidx/databinding/ViewDataBinding;
+.source "SourceFile"
+
+
+# instance fields
+.field public final A:Landroidx/cardview/widget/CardView;
+
+.field public final B:Landroidx/constraintlayout/widget/Group;
+
+.field public final C:Landroid/widget/TextView;
+
+.field public final D:Lcom/patientaccess/util/ui/LatoBlackTextView;
+
+.field public final E:Landroidx/recyclerview/widget/RecyclerView;
+
+.field public final F:Landroid/widget/TextView;
+
+.field public final G:Landroid/widget/ProgressBar;
+
+.field public final H:Landroidx/appcompat/widget/AppCompatButton;
+
+.field public final I:Landroid/widget/RelativeLayout;
+
+.field public final J:Landroidx/core/widget/NestedScrollView;
+
+
+# direct methods
+.method protected constructor <init>(Ljava/lang/Object;Landroid/view/View;ILandroidx/cardview/widget/CardView;Landroidx/constraintlayout/widget/Group;Landroid/widget/TextView;Lcom/patientaccess/util/ui/LatoBlackTextView;Landroidx/recyclerview/widget/RecyclerView;Landroid/widget/TextView;Landroid/widget/ProgressBar;Landroidx/appcompat/widget/AppCompatButton;Landroid/widget/RelativeLayout;Landroidx/core/widget/NestedScrollView;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1, p2, p3}, Landroidx/databinding/ViewDataBinding;-><init>(Ljava/lang/Object;Landroid/view/View;I)V
+
+    .line 2
+    iput-object p4, p0, Lcom/patientaccess/o/n4;->A:Landroidx/cardview/widget/CardView;
+
+    .line 3
+    iput-object p5, p0, Lcom/patientaccess/o/n4;->B:Landroidx/constraintlayout/widget/Group;
+
+    .line 4
+    iput-object p6, p0, Lcom/patientaccess/o/n4;->C:Landroid/widget/TextView;
+
+    .line 5
+    iput-object p7, p0, Lcom/patientaccess/o/n4;->D:Lcom/patientaccess/util/ui/LatoBlackTextView;
+
+    .line 6
+    iput-object p8, p0, Lcom/patientaccess/o/n4;->E:Landroidx/recyclerview/widget/RecyclerView;
+
+    .line 7
+    iput-object p9, p0, Lcom/patientaccess/o/n4;->F:Landroid/widget/TextView;
+
+    .line 8
+    iput-object p10, p0, Lcom/patientaccess/o/n4;->G:Landroid/widget/ProgressBar;
+
+    .line 9
+    iput-object p11, p0, Lcom/patientaccess/o/n4;->H:Landroidx/appcompat/widget/AppCompatButton;
+
+    .line 10
+    iput-object p12, p0, Lcom/patientaccess/o/n4;->I:Landroid/widget/RelativeLayout;
+
+    .line 11
+    iput-object p13, p0, Lcom/patientaccess/o/n4;->J:Landroidx/core/widget/NestedScrollView;
+
+    return-void
+.end method

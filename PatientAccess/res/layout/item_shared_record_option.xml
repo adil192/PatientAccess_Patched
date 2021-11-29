@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/item_shared_record_option_0" android:background="@color/user_session_content_bg" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_big" style="@style/Divider" />
+    <include android:id="@id/option" layout="@layout/item_medical_record_option" />
+</LinearLayout>

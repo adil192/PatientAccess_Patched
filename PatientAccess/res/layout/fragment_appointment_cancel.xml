@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_appointment_cancel_0" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end" android:id="@id/btn_close_cancel_appointment" android:padding="@dimen/padding_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_cross" />
+    <TextView android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/text_cancel_appointment_reason" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" style="@style/NavyBoldTitle" />
+    <View android:id="@id/title_divider" android:layout_marginTop="@dimen/margin_medium" style="@style/Divider" />
+    <ScrollView android:background="@color/background_gray" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/padding_medium" android:paddingEnd="@dimen/padding_medium">
+            <TextView android:textSize="@dimen/font_size_16" android:id="@id/tv_cancel_policy_description" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/text_cancel_policy" style="@style/DarkGrayRegularText" />
+            <androidx.cardview.widget.CardView android:id="@id/cv_appt_cancellation_warning_container" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" app:cardBackgroundColor="@color/notification_warning" app:cardCornerRadius="@dimen/radius_12" app:cardElevation="0.0dip" app:contentPadding="@dimen/padding_big" style="@style/CardViewStyle">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:layout_gravity="center" android:id="@id/tv_warning_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/appointment_warning_message" android:lineSpacingExtra="@dimen/default_line_spacing_extra" style="@style/NavyRegularText" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <include android:id="@id/referral_container" layout="@layout/card_referral_appt_cancellation" />
+            <View android:tag="binding_4" android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/margin_medium" />
+            <TextView android:id="@id/tv_enter_reason_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/text_enter_reason_cancellation" style="@style/NavyBoldSubTitle" />
+            <TextView android:id="@id/tv_enter_reason_description" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:lineSpacingExtra="@dimen/line_spacing_default_height" style="@style/DarkGrayRegularText" />
+            <com.patientaccess.validation.widget.ValidatedEditTextView android:id="@id/et_cancel_reason" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:hint="@string/text_hint_cancel_appointment" android:lines="@integer/reason_text_lines" android:inputType="textMultiLine" app:counterEnabled="true" app:counterMaxLength="@integer/reason_digit_limit" />
+            <LinearLayout android:orientation="vertical" android:tag="binding_5" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/tv_total_paid_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/text_total_paid" style="@style/DarkGrayRegularText" />
+                <TextView android:textSize="@dimen/font_size_18" android:id="@id/tv_total_paid" android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_smallest" style="@style/DarkNavyRegularText" />
+                <View android:id="@id/divider_title_date" android:tag="binding_7" android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_medium" />
+                <TextView android:id="@id/tv_refund_to" android:tag="binding_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_refund_to" style="@style/DarkGrayRegularText" />
+                <RelativeLayout android:id="@id/masked_card_item_container" android:tag="binding_9" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+                    <com.patientaccess.util.ui.MaskedPaymentCardView android:id="@id/masked_card_item" android:tag="binding_10" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <RelativeLayout android:tag="binding_11" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <androidx.appcompat.widget.AppCompatImageView android:id="@id/gpay_img_vw" android:layout_width="40.0dip" android:layout_height="28.0dip" app:srcCompat="@drawable/ic_pay_with_google" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_google_pay" android:layout_marginStart="@dimen/margin_medium" android:layout_toEndOf="@id/gpay_img_vw" style="@style/NavyBoldTitle20SP" />
+                    </RelativeLayout>
+                    <RelativeLayout android:tag="binding_12" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_apple_pay" android:layout_width="40.0dip" android:layout_height="28.0dip" app:srcCompat="@drawable/ic_apple_pay" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_apple_pay" android:layout_marginStart="@dimen/margin_medium" android:layout_toEndOf="@id/iv_apple_pay" style="@style/NavyBoldTitle20SP" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <View android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_medium" />
+                <TextView android:id="@id/tv_to_be_refunded_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_to_be_refunded" style="@style/DarkGrayRegularText" />
+                <TextView android:textSize="@dimen/font_size_18" android:textColor="@color/accent" android:id="@id/tv_to_be_refunded" android:tag="binding_13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_smallest" style="@style/DarkNavyRegularText" />
+                <TextView android:id="@id/tv_about_refund_policy" android:tag="binding_14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_smallest" android:text="@string/text_about_refund_policy" style="@style/PinkBoldText" />
+                <View android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_medium" />
+                <TextView android:id="@id/tv_refund_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/text_refund_description" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ProgressBar android:layout_gravity="center" android:id="@id/pb_cancel_appointment" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="true" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+    <View android:id="@id/view" android:layout_marginBottom="@dimen/book_appointment_btn_margin" style="@style/Divider" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/btn_cancel_appointment" android:layout_height="46.0dip" android:layout_marginBottom="@dimen/book_appointment_btn_margin" android:text="@string/text_cancel_appointment_reason" style="@style/PinkBorderWhiteBgButton" />
+</LinearLayout>

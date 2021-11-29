@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:gravity="center_horizontal" android:id="@id/tv_resources_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_triage_empty_resources" android:paddingStart="@dimen/margin_medium" android:paddingEnd="@dimen/margin_medium" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/NavyBoldTitle" />
+    <Button android:id="@id/btn_resources_go_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big" android:text="@string/text_triage_btn_go_back_health_advice" android:paddingStart="@dimen/padding_big" android:paddingEnd="@dimen/padding_big" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_resources_empty" style="@style/PinkButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

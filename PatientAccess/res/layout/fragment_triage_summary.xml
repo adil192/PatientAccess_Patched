@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_triage_summary_0" android:background="@color/user_session_content_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center" android:id="@id/pb_summary" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:indeterminate="true" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+    <TextView android:gravity="center" android:id="@id/tv_triage_summary_error" android:background="@drawable/bg_summary_error" android:padding="@dimen/padding_medium" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/text_triage_summary_error" android:layout_marginStart="@dimen/padding_medium" android:layout_marginEnd="@dimen/padding_medium" style="@style/NavyRegularText" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_triage_summary" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

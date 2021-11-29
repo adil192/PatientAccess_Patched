@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:tag="layout/fragment_test_result_details_0" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/tv_test_result_details_title" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" style="@style/NavyBoldTitle" />
+        <View android:layout_marginTop="@dimen/margin_medium" style="@style/Divider" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/content_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <FrameLayout android:id="@id/chart_container" android:layout_width="fill_parent" android:layout_height="@dimen/test_results_chart_height" />
+                <TextView android:textSize="@dimen/font_size_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_huge" android:text="@string/text_results_history" android:layout_marginStart="@dimen/margin_big" style="@style/NavyBoldTitle" />
+                <View android:layout_marginTop="@dimen/margin_small" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" style="@style/Divider" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_results_history" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/padding_big" android:paddingEnd="@dimen/padding_big" />
+            </LinearLayout>
+            <ProgressBar android:layout_gravity="center" android:id="@id/pb_test_results" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:layout_gravity="center" android:id="@id/tv_no_test_results" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_no_records" style="@style/NavyBoldTitle" />
+        </FrameLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

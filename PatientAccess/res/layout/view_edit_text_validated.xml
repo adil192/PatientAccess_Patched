@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/view_edit_text_validated_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/input_layout" android:background="@drawable/bg_edittext" android:layout_width="fill_parent" android:layout_height="wrap_content" app:counterTextAppearance="@style/TextCounter" app:hintEnabled="false" app:passwordToggleDrawable="@drawable/ic_password_visibility_toggle" app:passwordToggleTint="@color/password_visibility_toggle_tint">
+            <com.google.android.material.textfield.TextInputEditText android:gravity="start|center|top" android:id="@id/edit_text" android:background="@android:color/transparent" android:scrollbars="vertical" android:saveEnabled="false" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/RegistrationInputEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </FrameLayout>
+    <TextView android:id="@id/tv_error_message" android:paddingTop="@dimen/padding_small" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ErrorText" />
+</LinearLayout>

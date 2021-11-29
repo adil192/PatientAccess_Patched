@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_video_appointment_about_video_call_0" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageButton android:id="@id/ib_video_calls_back" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/appointment_margin_20" android:layout_marginStart="@dimen/appointment_margin_10" app:srcCompat="@drawable/ic_back" />
+    <TextView android:textStyle="bold" android:textColor="@color/color_about_video_calls" android:padding="@dimen/appointment_margin_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/appointment_margin_20" android:text="@string/about_video_appointments" style="@style/NavyBoldTitle" />
+    <View style="@style/Divider" />
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/appointment_margin_20" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:background="@drawable/ic_bullet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_small" />
+        <TextView android:layout_gravity="start" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/text_video_appointment_about_video_call_details_one" android:drawablePadding="@dimen/padding_small" android:layout_marginStart="@dimen/padding_small" style="@style/NavyRegularText" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/appointment_margin_20" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/appointment_margin_20" android:paddingEnd="@dimen/appointment_margin_20">
+        <ImageView android:background="@drawable/ic_bullet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_small" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/text_video_appointment_about_video_call_details_two" android:drawablePadding="@dimen/padding_small" android:layout_marginStart="@dimen/padding_small" style="@style/NavyRegularText" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/appointment_margin_20" android:paddingTop="@dimen/appointment_margin_20" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/appointment_margin_20" android:paddingEnd="@dimen/appointment_margin_20">
+        <ImageView android:background="@drawable/ic_bullet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_small" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/text_video_appointment_about_video_call_details_three" android:drawablePadding="@dimen/padding_small" android:layout_marginStart="@dimen/padding_small" style="@style/NavyRegularText" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/appointment_margin_20" android:paddingTop="@dimen/appointment_margin_20" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/appointment_margin_20" android:paddingEnd="@dimen/appointment_margin_20">
+        <ImageView android:background="@drawable/ic_bullet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/appointment_header_margin_bottom" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/text_video_appointment_about_video_call_details_four" android:drawablePadding="@dimen/padding_small" android:layout_marginStart="@dimen/padding_small" style="@style/NavyRegularText" />
+    </LinearLayout>
+</LinearLayout>

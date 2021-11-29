@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:tag="layout/fragment_user_status_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/alert_label_text_size" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_proxy_user_alert" android:background="@color/proxy_user_background" android:paddingTop="@dimen/padding_smallest" android:paddingBottom="@dimen/padding_smallest" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/alert_proxy_user" style="@style/LatoFontFamily" />
+</FrameLayout>

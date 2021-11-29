@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/fragment_base_shared_medical_records_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:layout_gravity="center" android:id="@id/pb_content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:layout_gravity="center" android:id="@id/tv_shared_record_no_data" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_shared_record_no_value" style="@style/NavyBoldTitle" />
+    <LinearLayout android:orientation="vertical" android:background="@color/user_session_content_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/tv_shared_record_title" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/padding_medium" android:paddingEnd="@dimen/padding_medium" style="@style/NavyBoldTitle" />
+        <FrameLayout android:id="@id/view_container" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="@dimen/margin_medium" />
+        <View style="@style/Divider" />
+        <ScrollView android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:id="@id/container_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_medium" app:cardCornerRadius="@dimen/radius_12" app:cardElevation="@dimen/card_elevation" app:contentPadding="@dimen/padding_big" style="@style/CardViewStyle">
+                    <LinearLayout android:orientation="vertical" android:id="@id/card_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <TextView android:id="@id/tv_shared_record_link" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_smallest" style="@style/DarkNavyRegularText" />
+                        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+                            <TextView android:textSize="@dimen/font_size_18" android:id="@id/tv_shared_record_copy_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_shared_record_copy_link" android:layout_marginEnd="@dimen/margin_huge" style="@style/PinkBoldText" />
+                            <TextView android:textSize="@dimen/font_size_18" android:id="@id/tv_shared_record_open_link_in_browser" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_shared_record_open_link" android:layout_marginStart="@dimen/shared_record_link_buttons_padding" style="@style/PinkBoldText" />
+                        </LinearLayout>
+                        <View android:layout_marginTop="@dimen/margin_big" android:layout_marginBottom="@dimen/margin_big" style="@style/Divider" />
+                        <TextView android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/NavyBoldTitle" />
+                        <View android:layout_marginTop="@dimen/margin_big" android:layout_marginBottom="@dimen/margin_big" style="@style/Divider" />
+                        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/imv_shared_record_qr_code" android:tag="binding_3" android:layout_width="@dimen/shared_record_qr_code_image_size" android:layout_height="@dimen/shared_record_qr_code_image_size" android:layout_marginTop="@dimen/padding_big" android:layout_marginBottom="@dimen/padding_medium" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View style="@style/Divider" />
+                    <Button android:layout_gravity="center_horizontal" android:id="@id/btn_email_shared_record" android:layout_marginTop="@dimen/shared_record_email_margin_top" android:layout_marginBottom="@dimen/shared_record_email_margin_top" android:text="@string/text_shared_record_email_link" style="@style/PinkButton" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

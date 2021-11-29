@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/view_progress_flow_0" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/padding_big"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/text_steps_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_medium" style="@style/NavyBoldTitle" />
+    <FrameLayout android:id="@id/progress_container" android:background="@color/progress_flow_progress_secondary_color" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_progress_flow_radius" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium">
+        <ProgressBar android:id="@id/progress_steps" android:layout_width="fill_parent" android:layout_height="fill_parent" android:progressDrawable="@drawable/bg_progress_booking" style="@android:style/Widget.ProgressBar.Horizontal" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/font_size_16" android:id="@id/tv_flow_progress_description" android:paddingTop="@dimen/padding_small" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/padding_medium" android:paddingEnd="@dimen/padding_medium" style="@style/DarkGrayRegularText" />
+</LinearLayout>

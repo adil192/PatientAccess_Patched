@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_medical_records_tabs_0" android:background="@color/user_session_content_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:tag="binding_1" android:background="@android:color/white" android:paddingBottom="@dimen/padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/padding_medium" android:paddingEnd="@dimen/padding_medium" style="@style/NavyBoldTitle" />
+    <View style="@style/Divider" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:layout_gravity="bottom" style="@style/Divider" />
+        <com.google.android.material.tabs.TabLayout android:id="@id/medical_records_tab_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" app:tabIndicatorColor="@color/pink" app:tabMode="fixed" app:tabPaddingEnd="@dimen/medical_problem_tab_padding_end" app:tabPaddingStart="@dimen/medical_problem_tab_padding_end" app:tabSelectedTextColor="@color/pink" app:tabTextAppearance="@style/MedicationsTextAppearance" />
+    </FrameLayout>
+    <FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/container_no_value" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:layout_width="@dimen/health_record_categories_no_items_icon_size" android:layout_height="@dimen/health_record_categories_no_items_icon_size" app:srcCompat="@drawable/ic_medical_record_no_value" />
+            <TextView android:textColor="@color/medical_records_title_font_color" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big" android:text="@string/text_no_records" style="@style/NavyBoldTitle" />
+        </LinearLayout>
+        <androidx.viewpager.widget.ViewPager android:id="@id/vp_medical_records" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/pb_content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>

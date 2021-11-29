@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:tag="layout/fragment_medication_manager_dialog_bottom_sheet_0" android:background="@drawable/bg_dialog_round_corners" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/desc_medication_assistant_prompt"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/btn_close" android:visibility="visible" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_small" android:contentDescription="@string/text_close_button" android:layout_marginEnd="@dimen/margin_medium" android:layout_alignParentEnd="true" android:accessibilityTraversalAfter="@id/btn_turn_on_medication_manager" app:srcCompat="@drawable/ic_rounded_close" />
+        <LinearLayout android:orientation="vertical" android:id="@id/button_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <View android:id="@id/bottom_divider" android:visibility="gone" android:layout_width="fill_parent" style="@style/Divider" />
+            <ProgressBar android:id="@id/progressBar" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_smallest" android:indeterminate="true" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+            <Button android:id="@id/btn_turn_on_medication_manager" android:layout_width="fill_parent" android:layout_height="@dimen/book_appointment_button_next_height" android:layout_margin="@dimen/margin_medium" android:text="@string/text_turn_on_meds_manager" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" style="@style/PinkButton" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/button_container" android:layout_below="@id/btn_close">
+            <View android:id="@id/top_divider" android:visibility="gone" android:layout_width="fill_parent" android:elevation="@dimen/margin_small" style="@style/Divider" />
+            <androidx.core.widget.NestedScrollView android:id="@id/svContent" android:scrollbars="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <LinearLayout android:orientation="vertical" android:id="@id/contentContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/margin_big" android:paddingEnd="@dimen/margin_big">
+                    <TextView android:textSize="@dimen/font_size_24" android:id="@id/title" android:paddingTop="@dimen/padding_4.5" android:paddingBottom="@dimen/padding_4.5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/text_medication_manager" android:importantForAccessibility="no" style="@style/NavyBoldDialogTitle" />
+                    <TextView android:gravity="start" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/margin_big" android:text="@string/text_meds_management_msg" android:lineSpacingMultiplier="1.3" style="@style/DarkGrayRegularText18" />
+                    <TextView android:gravity="start" android:id="@id/second_description" android:paddingBottom="@dimen/margin_medium" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/text_meds_manager_withdraw_msg" android:lineSpacingMultiplier="1.3" style="@style/DarkGrayRegularText18" />
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

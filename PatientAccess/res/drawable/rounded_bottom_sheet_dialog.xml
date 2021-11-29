@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/white" />
+    <padding android:left="@dimen/search_location_view_icon_padding" android:top="@dimen/search_location_view_icon_padding" android:right="@dimen/search_location_view_icon_padding" />
+    <corners android:topLeftRadius="@dimen/radius_12" android:topRightRadius="@dimen/radius_12" />
+</shape>

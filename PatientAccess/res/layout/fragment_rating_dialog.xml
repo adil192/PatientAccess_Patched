@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog_round_corners" android:paddingTop="@dimen/padding_medium" android:paddingBottom="@dimen/padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rating_dialog_title" style="@style/NavyBoldTitle" />
+    <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/rating_dialog_description" android:layout_marginStart="@dimen/margin_big" android:layout_marginEnd="@dimen/margin_big" style="@style/NavyRegularText" />
+    <RatingBar android:layout_gravity="center_horizontal" android:id="@id/rating_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:scaleX="0.7" android:scaleY="0.7" />
+    <View style="@style/Divider" />
+    <TextView android:textColor="@color/colorPrimary" android:layout_gravity="center_horizontal" android:id="@id/tv_not_now" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/rating_dialog_dismiss_button_text" style="@style/NavyBoldTitle" />
+</LinearLayout>

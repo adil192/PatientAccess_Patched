@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_patient_care_services_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:tag="binding_1" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/layout_service_search" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium" layout="@layout/view_care_provider_service_search" />
+    </LinearLayout>
+    <View style="@style/Divider" />
+    <FrameLayout android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:id="@id/pcProgressBar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="true" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+            <androidx.core.widget.NestedScrollView android:id="@id/sv_patient_care_service" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/pcProgressBar">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <FrameLayout android:id="@id/gp_services_container" android:background="@color/gp_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <RelativeLayout android:id="@id/layout_non_gp_title_container" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big">
+                        <RelativeLayout android:orientation="horizontal" android:id="@id/pharmacy_title" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <com.patientaccess.util.ui.LatoBlackTextView android:id="@id/pharmacy_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_pap_appt_title" android:layout_centerVertical="true" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" style="@style/NavyBoldTitle" />
+                        </RelativeLayout>
+                        <TextView android:id="@id/tv_pharmacy_appointment_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_below="@id/pharmacy_title" android:lineSpacingMultiplier="1.5" android:contentDescription="@string/desc_nhs_link" android:paddingStart="@dimen/margin_medium" android:paddingEnd="@dimen/margin_medium" android:breakStrategy="simple" style="@style/MedicationsTextAppearance" />
+                        <LinearLayout android:id="@id/layout_category_menu_parent" android:tag="binding_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big" android:layout_below="@id/tv_pharmacy_appointment_description" android:contentDescription="@string/desc_category_list" android:importantForAccessibility="yes">
+                            <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/rv_category_menu" android:padding="@dimen/margin_2" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <FrameLayout android:id="@id/untethered_recent_appointment_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/pcServiceList" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium" android:contentDescription="@string/desc_service_list" android:importantForAccessibility="yes" android:nestedScrollingEnabled="false" />
+                    <TextView android:id="@id/pcErrorContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/margin_small" android:text="@string/error_no_service" />
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </RelativeLayout>
+        <include android:layout_gravity="center" android:id="@id/no_search_container" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/fragment_patient_care_service_no_search_result" />
+        <com.patientaccess.util.ui.TouchWrapper android:id="@id/touch_search_bg_container" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

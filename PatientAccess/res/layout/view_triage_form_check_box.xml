@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:id="@id/vg_terms_of_use" android:paddingTop="@dimen/margin_small" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatCheckBox android:theme="@style/AppTheme.CheckboxStyle" android:id="@id/ch_triage_form" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:id="@id/tv_triage_form_check_box" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_smallest" app:layout_constraintBaseline_toBaselineOf="@id/ch_triage_form" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/ch_triage_form" style="@style/NavyRegularText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

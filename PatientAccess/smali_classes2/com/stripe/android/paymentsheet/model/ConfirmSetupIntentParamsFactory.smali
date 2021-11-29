@@ -1,0 +1,148 @@
+.class public final Lcom/stripe/android/paymentsheet/model/ConfirmSetupIntentParamsFactory;
+.super Lcom/stripe/android/paymentsheet/model/ConfirmStripeIntentParamsFactory;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/stripe/android/paymentsheet/model/ConfirmStripeIntentParamsFactory<",
+        "Lcom/stripe/android/model/ConfirmSetupIntentParams;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field private final clientSecret:Lcom/stripe/android/paymentsheet/model/ClientSecret;
+
+
+# direct methods
+.method public constructor <init>(Lcom/stripe/android/paymentsheet/model/ClientSecret;)V
+    .locals 1
+
+    const-string v0, "clientSecret"
+
+    invoke-static {p1, v0}, Lh/c0/d/m;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 v0, 0x0
+
+    .line 1
+    invoke-direct {p0, v0}, Lcom/stripe/android/paymentsheet/model/ConfirmStripeIntentParamsFactory;-><init>(Lh/c0/d/g;)V
+
+    iput-object p1, p0, Lcom/stripe/android/paymentsheet/model/ConfirmSetupIntentParamsFactory;->clientSecret:Lcom/stripe/android/paymentsheet/model/ClientSecret;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public create(Lcom/stripe/android/paymentsheet/model/PaymentSelection$New;)Lcom/stripe/android/model/ConfirmSetupIntentParams;
+    .locals 8
+
+    const-string v0, "paymentSelection"
+
+    invoke-static {p1, v0}, Lh/c0/d/m;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 7
+    sget-object v1, Lcom/stripe/android/model/ConfirmSetupIntentParams;->Companion:Lcom/stripe/android/model/ConfirmSetupIntentParams$Companion;
+
+    .line 8
+    invoke-virtual {p1}, Lcom/stripe/android/paymentsheet/model/PaymentSelection$New;->getPaymentMethodCreateParams()Lcom/stripe/android/model/PaymentMethodCreateParams;
+
+    move-result-object v2
+
+    .line 9
+    iget-object p1, p0, Lcom/stripe/android/paymentsheet/model/ConfirmSetupIntentParamsFactory;->clientSecret:Lcom/stripe/android/paymentsheet/model/ClientSecret;
+
+    invoke-virtual {p1}, Lcom/stripe/android/paymentsheet/model/ClientSecret;->getValue()Ljava/lang/String;
+
+    move-result-object v3
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const/16 v6, 0xc
+
+    const/4 v7, 0x0
+
+    .line 10
+    invoke-static/range {v1 .. v7}, Lcom/stripe/android/model/ConfirmSetupIntentParams$Companion;->create$default(Lcom/stripe/android/model/ConfirmSetupIntentParams$Companion;Lcom/stripe/android/model/PaymentMethodCreateParams;Ljava/lang/String;Lcom/stripe/android/model/MandateDataParams;Ljava/lang/String;ILjava/lang/Object;)Lcom/stripe/android/model/ConfirmSetupIntentParams;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public create(Lcom/stripe/android/paymentsheet/model/PaymentSelection$Saved;)Lcom/stripe/android/model/ConfirmSetupIntentParams;
+    .locals 8
+
+    const-string v0, "paymentSelection"
+
+    invoke-static {p1, v0}, Lh/c0/d/m;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 3
+    sget-object v1, Lcom/stripe/android/model/ConfirmSetupIntentParams;->Companion:Lcom/stripe/android/model/ConfirmSetupIntentParams$Companion;
+
+    .line 4
+    invoke-virtual {p1}, Lcom/stripe/android/paymentsheet/model/PaymentSelection$Saved;->getPaymentMethod()Lcom/stripe/android/model/PaymentMethod;
+
+    move-result-object p1
+
+    iget-object p1, p1, Lcom/stripe/android/model/PaymentMethod;->id:Ljava/lang/String;
+
+    if-eqz p1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const-string p1, ""
+
+    :goto_0
+    move-object v2, p1
+
+    .line 5
+    iget-object p1, p0, Lcom/stripe/android/paymentsheet/model/ConfirmSetupIntentParamsFactory;->clientSecret:Lcom/stripe/android/paymentsheet/model/ClientSecret;
+
+    invoke-virtual {p1}, Lcom/stripe/android/paymentsheet/model/ClientSecret;->getValue()Ljava/lang/String;
+
+    move-result-object v3
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const/16 v6, 0xc
+
+    const/4 v7, 0x0
+
+    .line 6
+    invoke-static/range {v1 .. v7}, Lcom/stripe/android/model/ConfirmSetupIntentParams$Companion;->create$default(Lcom/stripe/android/model/ConfirmSetupIntentParams$Companion;Ljava/lang/String;Ljava/lang/String;Lcom/stripe/android/model/MandateDataParams;Ljava/lang/String;ILjava/lang/Object;)Lcom/stripe/android/model/ConfirmSetupIntentParams;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bridge synthetic create(Lcom/stripe/android/paymentsheet/model/PaymentSelection$New;)Lcom/stripe/android/model/ConfirmStripeIntentParams;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Lcom/stripe/android/paymentsheet/model/ConfirmSetupIntentParamsFactory;->create(Lcom/stripe/android/paymentsheet/model/PaymentSelection$New;)Lcom/stripe/android/model/ConfirmSetupIntentParams;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bridge synthetic create(Lcom/stripe/android/paymentsheet/model/PaymentSelection$Saved;)Lcom/stripe/android/model/ConfirmStripeIntentParams;
+    .locals 0
+
+    .line 2
+    invoke-virtual {p0, p1}, Lcom/stripe/android/paymentsheet/model/ConfirmSetupIntentParamsFactory;->create(Lcom/stripe/android/paymentsheet/model/PaymentSelection$Saved;)Lcom/stripe/android/model/ConfirmSetupIntentParams;
+
+    move-result-object p1
+
+    return-object p1
+.end method

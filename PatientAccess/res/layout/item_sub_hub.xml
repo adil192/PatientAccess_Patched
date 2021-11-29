@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/item_sub_hub_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.patientaccess.util.ui.LatoBlackTextView android:id="@id/tv_sub_hub_title" android:paddingBottom="@dimen/padding_big" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big" android:layout_marginStart="@dimen/margin_medium" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/NavyBoldTitle" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_sub_hub_article" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_sub_hub_title" />
+</androidx.constraintlayout.widget.ConstraintLayout>

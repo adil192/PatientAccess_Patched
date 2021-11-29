@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:tag="layout/item_searched_location_0" android:background="@android:color/white" android:paddingTop="@dimen/padding_medium" android:paddingBottom="@dimen/padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:gravity="center" android:tag="binding_1" android:background="@drawable/bg_order_circle" android:layout_width="@dimen/search_location_order_icon_size" android:layout_height="@dimen/search_location_order_icon_size" android:layout_marginStart="@dimen/search_location_result_list_padding_horizontal" android:layout_marginEnd="@dimen/search_location_item_description_margin" style="@style/DarkGrayRegularText" />
+    <LinearLayout android:orientation="vertical" android:id="@id/locations_description_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/search_location_item_description_margin">
+        <TextView android:textSize="@dimen/font_size_18" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/NavyRegularText" />
+        <TextView android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/DarkGrayRegularText" />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatImageView android:layout_width="@dimen/search_location_navigation_icon_size" android:layout_height="@dimen/search_location_navigation_icon_size" android:layout_marginEnd="@dimen/search_location_navigation_icon_margin_end" app:srcCompat="@drawable/ic_location_arrow" />
+</LinearLayout>

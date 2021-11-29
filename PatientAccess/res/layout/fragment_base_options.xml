@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:tag="layout/fragment_base_options_0" android:background="@android:color/white" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_options_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_medium" style="@style/NavyBoldTitle" />
+    <View android:id="@id/options_divider" android:layout_marginTop="@dimen/margin_medium" android:layout_below="@id/tv_options_title" style="@style/Divider" />
+    <FrameLayout android:background="@color/user_session_content_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/tv_app_version" android:layout_below="@id/options_divider">
+        <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/bg_white_grey_border" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_options" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_big" android:layout_marginEnd="@dimen/margin_big" android:nestedScrollingEnabled="false" />
+                    <ProgressBar android:layout_gravity="center" android:id="@id/pb_options" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:layout_gravity="center" android:id="@id/tv_no_options" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/NavyBoldTitle" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:id="@id/btn_sign_out" android:background="@drawable/bg_white_grey_border" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_big">
+                    <TextView android:layout_gravity="center_vertical" android:id="@id/tv_sign_out" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_big" android:text="@string/more_button_log_out" style="@style/SignOutButton" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </FrameLayout>
+    <TextView android:gravity="center" android:id="@id/tv_app_version" android:background="@color/user_session_content_bg" android:padding="@dimen/padding_medium" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" style="@style/DarkGrayBoldRegularText" />
+</RelativeLayout>

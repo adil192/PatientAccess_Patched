@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/font_size_15" android:textColor="@drawable/bg_item_recipient_spinner_text_selector" android:id="@id/tv_recipient" android:paddingTop="@dimen/padding_medium" android:paddingBottom="@dimen/padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/padding_medium" android:paddingEnd="@dimen/message_recipient_spinner_end_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/text_core_summary_care_record_warning" style="@style/DarkNavyRegularText"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

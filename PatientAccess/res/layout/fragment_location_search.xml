@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_location_search_0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/tv_search_location_title" android:background="@android:color/white" android:paddingBottom="@dimen/padding_medium" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/padding_medium" android:paddingEnd="@dimen/padding_medium" style="@style/NavyBoldTitle" />
+    <TextView android:id="@id/tv_search_location_description" android:background="@android:color/white" android:paddingBottom="@dimen/padding_medium" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/padding_medium" android:paddingEnd="@dimen/padding_medium" style="@style/DarkGrayRegularText" />
+    <View android:id="@id/title_divider" android:visibility="gone" style="@style/Divider" />
+    <FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/locations_map" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.patientaccess.base.widget.LocationSearchView android:id="@id/locations_search_view" android:tag="binding_1" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/search_location_view_margin" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/locations_container" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.patientaccess.base.widget.MaxHeightRecyclerView android:id="@id/rv_locations" android:layout_width="fill_parent" android:layout_height="wrap_content" app:maxHeight="@dimen/search_location_result_list_max_height" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/pb_locations" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/search_location_results_container_min_height" />
+    </FrameLayout>
+</LinearLayout>

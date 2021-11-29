@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_restricted_user_0" android:background="@color/user_session_content_bg" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/section_user" android:background="@android:color/white" android:padding="@dimen/padding_big" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_size_18" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_avatar" android:background="@drawable/bg_user_avatar" android:layout_width="@dimen/more_ic_avatar_size" android:layout_height="@dimen/more_ic_avatar_size" android:layout_marginEnd="@dimen/margin_medium" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center_vertical" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/NavyBoldTitle" />
+            <TextView android:textSize="@dimen/font_size_16" android:gravity="center_vertical" android:id="@id/tv_account_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more_label_open_profile" style="@style/LinkBigBoldText" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:id="@id/tv_restricted_user" android:background="@android:color/white" android:padding="@dimen/padding_medium" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/error_profile_not_available" style="@style/NavyRegularText" />
+    <View style="@style/Divider" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="true" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+    <androidx.core.widget.NestedScrollView android:background="@color/user_session_content_bg" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.patientaccess.profile.widget.MigrationMessageView android:id="@id/view_migration_email" android:tag="binding_1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" />
+            <com.patientaccess.profile.widget.MigrationMessageView android:id="@id/view_migration_phone" android:tag="binding_2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" />
+            <TextView android:id="@id/tv_linked_message" android:background="@drawable/bg_notification_message" android:padding="@dimen/padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/text_proxy_restricted_message" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" style="@style/NavyRegularText" />
+            <LinearLayout android:orientation="vertical" android:id="@id/accounts_section" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_medium">
+                <TextView android:textSize="@dimen/font_size_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_proxy_user_title" style="@style/NavyBoldTitle" />
+                <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" app:cardCornerRadius="@dimen/radius_12" app:cardElevation="@dimen/card_elevation" style="@style/CardViewStyle">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_accounts" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_medium">
+                <TextView android:textSize="@dimen/font_size_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_about" style="@style/NavyBoldTitle" />
+                <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" app:cardCornerRadius="@dimen/radius_12" app:cardElevation="@dimen/card_elevation" style="@style/CardViewStyle">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_about_options" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <Button android:textSize="@dimen/font_size_18" android:textStyle="bold" android:layout_gravity="center_horizontal" android:id="@id/btn_log_out" android:layout_width="@dimen/button_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big" android:layout_marginBottom="@dimen/margin_most" android:text="@string/more_button_log_out" style="@style/RedBorderButton" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

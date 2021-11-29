@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/fragment_messages_list_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:gravity="start|center" android:id="@id/tv_title" android:background="@android:color/white" android:paddingBottom="@dimen/padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/messages_title" android:layout_alignParentTop="true" android:paddingStart="@dimen/padding_medium" android:paddingEnd="@dimen/padding_medium" style="@style/NavyBoldTitle" />
+    <View android:id="@id/title_divider" android:layout_below="@id/tv_title" style="@style/Divider" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/vg_no_messages" android:background="@color/user_session_content_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/vg_button" android:layout_below="@id/title_divider" android:layout_centerInParent="true">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/imv_no_messages" android:layout_width="@dimen/no_content_image_size" android:layout_height="@dimen/no_content_image_size" app:srcCompat="@drawable/ic_message_no_value" />
+        <TextView android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/no_problems_icon_margin_top" android:text="@string/messages_no_messages" style="@style/DarkGrayRegularText" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/vg_button" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View style="@style/Divider" />
+        <Button android:id="@id/bt_new_message" android:layout_width="fill_parent" android:layout_marginTop="@dimen/messages_button_margin" android:layout_marginBottom="@dimen/messages_button_margin" android:text="@string/message_new_conversation" android:drawablePadding="@dimen/padding_medium" android:paddingStart="@dimen/message_button_padding" android:paddingEnd="@dimen/message_button_padding" android:layout_marginStart="@dimen/padding_medium" android:layout_marginEnd="@dimen/padding_medium" style="@style/PinkButton" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_messages" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/vg_button" android:layout_below="@id/title_divider" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <ProgressBar android:id="@id/progress_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="true" android:layout_below="@id/title_divider" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+</RelativeLayout>

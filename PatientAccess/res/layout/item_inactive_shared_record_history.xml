@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/history_container" android:tag="layout/item_inactive_shared_record_history_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big" android:layout_marginBottom="@dimen/margin_big" android:paddingStart="@dimen/padding_small" android:paddingEnd="@dimen/padding_small"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_size_18" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/DarkGrayRegularText" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_smallest">
+        <TextView android:ellipsize="end" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" style="@style/DarkGrayRegularText" />
+        <TextView android:id="@id/tv_inactive_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_medium" style="@style/DarkNavyBoldRegularText" />
+    </LinearLayout>
+    <TextView android:ellipsize="end" android:id="@id/tv_consultant_and_date" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_smallest" android:lines="1" style="@style/DarkGrayRegularText" />
+</LinearLayout>

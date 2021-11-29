@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/fragment_untethered_edit_contact_details_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/title_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:id="@id/vg_edit_contact_details_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_edit_contact_details_title" android:layout_marginStart="@dimen/margin_medium" style="@style/LatoBold_18sp" />
+        <View android:layout_marginTop="@dimen/margin_medium" style="@style/Divider" />
+    </LinearLayout>
+    <ProgressBar android:id="@id/pb_contact_details" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:indeterminate="true" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/title_container" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+    <ScrollView android:id="@id/vg_contact_details" android:background="@color/user_session_content_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/footer" app:layout_constraintTop_toBottomOf="@id/pb_contact_details">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium">
+            <TextView android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_contact_details_first_name" style="@style/LatoBold16" />
+            <com.patientaccess.validation.widget.ValidatedEditTextView android:textSize="@dimen/font_size_18" android:id="@id/tv_contact_details_first_name" android:tag="binding_2" android:paddingTop="@dimen/margin_smallest" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium" style="@style/DarkNavyRegularText" />
+            <TextView android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_contact_details_last_name" style="@style/LatoBold16" />
+            <com.patientaccess.validation.widget.ValidatedEditTextView android:textSize="@dimen/font_size_18" android:id="@id/tv_contact_details_last_name" android:tag="binding_4" android:paddingTop="@dimen/margin_smallest" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium" style="@style/DarkNavyRegularText" />
+            <TextView android:id="@id/tv_contact_details_gender" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_contact_details_gender" style="@style/LatoBold16" />
+            <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/margin_smallest" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:weightSum="2.0">
+                <RadioGroup android:orientation="horizontal" android:id="@id/rg_row_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:weightSum="2.0" android:layout_weight="2.0">
+                    <RadioButton android:id="@id/rb_female" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/registration_female_label" android:layout_weight="1.0" style="@style/RegistrationRadioButton" />
+                    <RadioButton android:id="@id/rb_male" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/registration_male_label" android:layout_weight="1.0" style="@style/RegistrationRadioButton" />
+                </RadioGroup>
+                <RadioGroup android:orientation="horizontal" android:id="@id/rg_row_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <RadioButton android:id="@id/rb_unspecified" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/registration_not_specified_label" android:layout_weight="1.0" style="@style/RegistrationRadioButton" />
+                </RadioGroup>
+            </LinearLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_birth_date" style="@style/LatoBold16" />
+            <com.patientaccess.validation.widget.ValidatedDatePickerView android:id="@id/vdp_calendar" android:paddingTop="@dimen/margin_smallest" android:paddingBottom="@dimen/padding_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium" android:hint="@string/calendar_hint" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_contact_details_home_postcode" style="@style/LatoBold16" />
+            <com.patientaccess.validation.widget.ValidatedEditTextView android:textSize="@dimen/font_size_18" android:id="@id/tv_contact_details_postcode" android:tag="binding_6" android:paddingTop="@dimen/margin_smallest" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium" style="@style/DarkNavyRegularText" />
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@id/footer" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent">
+        <View android:layout_width="fill_parent" android:layout_height="1.0dip" style="@style/Divider" />
+        <Button android:id="@id/btn_save_contact_details_changes" android:layout_width="fill_parent" android:layout_margin="@dimen/margin_medium" android:text="@string/text_edit_contact_details_save" style="@style/PinkButton" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

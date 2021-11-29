@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:tag="layout/fragment_done_account_migration_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_width="@dimen/done_account_migration_icon_size" android:layout_height="@dimen/done_account_migration_icon_size" android:layout_marginBottom="@dimen/margin_medium" app:srcCompat="@drawable/ic_done" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_most" android:text="@string/text_migration_success_title" style="@style/NavyBoldTitle" />
+    <TextView android:gravity="center" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big" android:layout_marginBottom="@dimen/margin_most" android:layout_marginStart="@dimen/margin_most" android:layout_marginEnd="@dimen/margin_most" style="@style/DarkGrayRegularText" />
+    <Button android:id="@id/btn_got_it" android:layout_marginTop="@dimen/margin_most" android:text="@string/text_ok_got_it" style="@style/PinkButton" />
+</LinearLayout>

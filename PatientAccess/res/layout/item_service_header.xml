@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/pharmacy_title" android:tag="layout/item_service_header_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big" android:contentDescription="" android:importantForAccessibility="yes"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.patientaccess.util.ui.LatoBlackTextView android:textSize="@dimen/font_size_16" android:id="@id/pharmacy_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/margin_medium" style="@style/NavyBoldTitle" />
+    <androidx.appcompat.widget.AppCompatButton android:id="@id/btn_new" android:tag="binding_1" android:layout_width="63.0dip" android:layout_height="28.0dip" android:text="NEW" android:layout_centerVertical="true" android:layout_toEndOf="@id/pharmacy_description" style="@style/GreenButton" />
+</RelativeLayout>

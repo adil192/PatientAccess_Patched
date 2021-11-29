@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/consultation_book_appointment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View style="@style/Divider" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/btn_book_appointment" android:layout_marginTop="@dimen/consultation_request_appointment_margin_top" android:layout_marginBottom="@dimen/consultation_request_appointment_margin_top" android:text="@string/text_consultations_request_appointment" style="@style/PinkButton" />
+</LinearLayout>

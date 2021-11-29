@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_toggle_item_parent" android:tag="layout/item_toggle_list_0" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/margin_medium" android:paddingBottom="@dimen/margin_medium" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_size_18" android:id="@id/tv_toggle_content" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_smallest" style="@style/DefaultLatoBoldText" />
+        <androidx.appcompat.widget.SwitchCompat android:theme="@style/BrandedSwitch.control" android:id="@id/switch_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:importantForAccessibility="no" app:showText="false" />
+    </LinearLayout>
+    <View android:id="@id/bottom_divider" style="@style/Divider" />
+</LinearLayout>

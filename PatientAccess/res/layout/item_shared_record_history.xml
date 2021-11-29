@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:tag="layout/item_shared_record_history_0" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/radius_12" app:cardElevation="@dimen/card_elevation" app:contentPadding="@dimen/padding_big" style="@style/CardViewStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/shared_record_history_container" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/history_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/font_size_18" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/NavyRegularText" />
+            <TextView android:ellipsize="end" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_smallest" android:lines="1" style="@style/DarkGrayRegularText" />
+            <TextView android:ellipsize="end" android:id="@id/tv_consultant_and_date" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_small" android:lines="1" style="@style/DarkNavyRegularText" />
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="@dimen/appointment_type_arrow_image_width" android:layout_height="@dimen/appointment_type_arrow_image_height" android:layout_weight="0.0" app:srcCompat="@drawable/ic_arrow_right" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

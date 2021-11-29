@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_width="@dimen/placeholder_icon_size" android:layout_height="@dimen/placeholder_icon_size" app:srcCompat="@drawable/ic_appointments_no_value" />
+    <TextView android:gravity="center_horizontal" android:id="@id/tv_appointment_book_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_medium" android:text="@string/text_no_appointments" style="@style/NavyBoldTitle" />
+    <Button android:id="@id/btn_appointment" android:layout_width="fill_parent" android:layout_height="@dimen/book_appointment_button_next_height" android:layout_marginTop="@dimen/margin_big" android:text="@string/text_new_appointment_btn" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" style="@style/PinkButton" />
+</LinearLayout>

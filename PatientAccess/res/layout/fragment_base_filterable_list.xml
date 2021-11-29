@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/screen_wrapper" android:tag="layout/fragment_base_filterable_list_0" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/text_screen_title" android:background="@android:color/white" android:paddingBottom="@dimen/padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/padding_medium" android:paddingEnd="@dimen/padding_medium" style="@style/NavyBoldTitle" />
+    <View android:id="@id/divider_title" android:layout_marginBottom="@dimen/margin_big" style="@style/Divider" />
+    <TextView android:id="@id/text_list_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_small" android:layout_marginStart="@dimen/margin_big" android:layout_marginEnd="@dimen/margin_big" style="@style/NavyBoldSubTitle" />
+    <View android:id="@id/divider_list_title" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" style="@style/Divider" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/tv_no_content_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_small" android:layout_marginEnd="@dimen/margin_small">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="@dimen/health_record_categories_no_items_icon_size" android:layout_height="@dimen/health_record_categories_no_items_icon_size" app:srcCompat="@drawable/ic_medical_record_no_value" />
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/tv_no_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" style="@style/NavyBoldTitle" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_content" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/padding_big" android:paddingEnd="@dimen/padding_big" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/pb_content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>

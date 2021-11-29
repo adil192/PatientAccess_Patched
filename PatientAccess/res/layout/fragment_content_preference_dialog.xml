@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/bottom_sheet" android:tag="layout/fragment_content_preference_dialog_0" android:background="@drawable/bg_dialog_round_corners" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/desc_profile_option_content_preferences"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/img_close" android:visibility="visible" android:layout_width="@dimen/margin_big" android:layout_height="@dimen/margin_big" android:layout_marginTop="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_small" android:contentDescription="@string/text_close_button" android:layout_marginEnd="@dimen/margin_medium" android:layout_alignParentEnd="true" android:accessibilityTraversalAfter="@id/bottom_sheet_fragment_container" app:srcCompat="@drawable/ic_rounded_close" />
+        <LinearLayout android:orientation="vertical" android:id="@id/btn_layout" android:paddingBottom="@dimen/margin_48" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <View android:id="@id/bottom_divider" android:visibility="gone" android:layout_width="fill_parent" style="@style/Divider" />
+            <Button android:enabled="false" android:id="@id/btn_save" android:layout_width="fill_parent" android:layout_height="@dimen/book_appointment_button_next_height" android:layout_marginTop="@dimen/margin_medium" android:text="@string/text_btn_save_preference" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" style="@style/PinkButton" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/content_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/btn_layout" android:layout_below="@id/img_close">
+            <View android:id="@id/top_divider" android:visibility="gone" android:layout_width="fill_parent" android:elevation="@dimen/margin_small" style="@style/Divider" />
+            <androidx.core.widget.NestedScrollView android:id="@id/sv_content_layout_scroll_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/tv_title" android:paddingTop="@dimen/padding_4.5" android:paddingBottom="@dimen/padding_4.5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_big" android:text="@string/text_profile_option_content_preferences" android:importantForAccessibility="no" android:layout_marginStart="@dimen/margin_big" android:layout_marginEnd="@dimen/margin_big" style="@style/NavyRegularDialogTitle" />
+                    <FrameLayout android:id="@id/bottom_sheet_fragment_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

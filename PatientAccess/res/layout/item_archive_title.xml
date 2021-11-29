@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/item_archive_title_0" android:background="@color/background_gray" android:paddingTop="@dimen/margin_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium" android:paddingStart="@dimen/margin_big" android:paddingEnd="@dimen/margin_big"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/archived_medication_orders" style="@style/NavyBoldSubTitle" />
+    <TextView android:id="@id/requestedDate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="@dimen/padding_medium" android:text="@string/archive_message" style="@style/DarkGrayRegularText" />
+</LinearLayout>

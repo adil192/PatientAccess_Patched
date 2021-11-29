@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:tag="layout/item_appointment_header_0" android:paddingTop="@dimen/padding_medium" android:paddingBottom="@dimen/padding_medium" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/item_default_text_size" android:textStyle="bold" android:textColor="@color/text_title_color" android:gravity="center" android:id="@id/tv_appointment_header_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_appointments_maximum_booked_header_title" android:lineSpacingExtra="@dimen/font_line_spacing_7" />
+    <Button android:id="@id/btn_appointment_request" android:visibility="gone" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:text="@string/text_new_appointment_btn" style="@style/PinkButton" />
+</LinearLayout>

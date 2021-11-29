@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/cl_recent_booking_container" android:tag="layout/fragment_recent_appointment_booking_0" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.patientaccess.util.ui.LatoBlackTextView android:id="@id/tv_recent_booking_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/text_recent_appointment_booking" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/NavyBoldTitle" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_recent_booking" android:layout_width="fill_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/pb_containter" />
+    <RelativeLayout android:id="@id/pb_containter" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView android:id="@id/cardView" android:background="@android:color/white" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_medium" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" app:cardCornerRadius="@dimen/radius_12" app:cardElevation="@dimen/card_elevation" app:contentPadding="@dimen/padding_medium" style="@style/CardViewStyle">
+            <ProgressBar android:id="@id/pb_recently_booked_appointments" android:paddingTop="@dimen/margin_big" android:paddingBottom="@dimen/margin_big" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</LinearLayout>

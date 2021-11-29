@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_services_0" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_small" android:text="@string/text_available_services_title" android:paddingStart="@dimen/margin_medium" android:paddingEnd="@dimen/margin_medium" style="@style/NavyBoldTitle" />
+    <TextView android:paddingBottom="@dimen/padding_big" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/text_available_services_description" android:paddingStart="@dimen/margin_medium" android:paddingEnd="@dimen/margin_medium" style="@style/DarkGrayRegularText" />
+    <View style="@style/Divider" />
+    <FrameLayout android:background="@color/user_session_content_bg" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_services" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/margin_medium" android:paddingEnd="@dimen/margin_medium" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/pb_services" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/text_no_services" style="@style/NavyBoldTitle" />
+    </FrameLayout>
+</LinearLayout>

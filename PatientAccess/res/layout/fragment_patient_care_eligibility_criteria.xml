@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_patient_care_eligibility_criteria_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center" android:id="@id/pcProgressBar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="true" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+    <ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:paddingStart="@dimen/padding_small" android:paddingEnd="@dimen/padding_small">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/padding_big" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/font_size_16" android:id="@id/mark_down_parser" android:layout_width="fill_parent" android:layout_height="fill_parent" android:lineSpacingExtra="2.0dip" android:paddingStart="@dimen/padding_small" android:paddingEnd="@dimen/padding_small" style="@style/LatoFontFamily" />
+            <TextView android:textColor="@color/primary" android:id="@id/pc_link" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big" android:layout_marginBottom="@dimen/margin_medium" android:paddingStart="@dimen/padding_small" android:paddingEnd="@dimen/padding_small" style="@style/LatoFontFamily" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_continue_container" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View style="@style/Divider" />
+        <Button android:id="@id/btn_continue" android:layout_width="fill_parent" android:layout_margin="@dimen/margin_medium" android:text="@string/text_see_available_providers" style="@style/PinkButton" />
+    </LinearLayout>
+</LinearLayout>

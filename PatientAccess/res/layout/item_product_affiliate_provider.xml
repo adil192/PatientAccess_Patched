@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:tag="layout/item_product_affiliate_provider_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" app:cardCornerRadius="@dimen/radius_12" style="@style/CardViewStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:ellipsize="end" android:id="@id/care_provider_name_txt_vw" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_small" style="@style/NavyBoldTitle" />
+            <TextView android:id="@id/care_provider_price_txt_vw" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0" style="@style/MessageDialogText" />
+        </LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@id/care_provider_type_img_vw" android:layout_width="14.0dip" android:layout_height="14.0dip" android:src="@drawable/ic_mode_home_gray" android:maxWidth="@dimen/careprovider_icon_max_width" android:maxHeight="@dimen/careprovider_icon_max_width" android:tint="@color/patient_care_service_item_arrow_color" android:layout_marginEnd="@dimen/margin_small" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <TextView android:ellipsize="end" android:id="@id/care_provider_type_txt_vw" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/txt_home_delivery" android:maxLines="1" android:layout_marginStart="@dimen/margin_small" app:layout_constraintEnd_toStartOf="@id/view_delivery_method" app:layout_constraintStart_toEndOf="@id/care_provider_type_img_vw" app:layout_constraintTop_toTopOf="parent" style="@style/DarkGrayRegularText" />
+            <com.patientaccess.util.ui.DeliveryMethodView android:id="@id/view_delivery_method" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_medium" app:layout_constraintBottom_toBottomOf="@id/care_provider_type_txt_vw" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/care_provider_type_txt_vw" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

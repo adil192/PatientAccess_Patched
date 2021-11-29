@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:layout_gravity="center" android:id="@id/tv_book_patient_care_filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/select_a_provider" android:layout_marginEnd="@dimen/appointment_margin_20" style="@style/NavyBoldTitle" />
+    </FrameLayout>
+</androidx.appcompat.widget.Toolbar>

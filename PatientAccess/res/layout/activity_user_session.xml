@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/user_session_container" android:tag="layout/activity_user_session_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="com.patientaccess.util.ui.UserSessionSnackbarBehavior">
+        <FrameLayout android:id="@id/vg_proxy_user_alert" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <androidx.appcompat.widget.Toolbar android:id="@id/user_session_toolbar" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/user_session_toolbar_horizontal_padding" android:paddingEnd="@dimen/padding_medium" app:contentInsetEnd="0.0dip" app:contentInsetLeft="0.0dip" app:contentInsetRight="0.0dip" app:contentInsetStart="0.0dip">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/user_session_toolbar_title_font_size" android:textStyle="bold" android:textColor="@color/navigation_toolbar_title_color" android:layout_gravity="center" android:id="@id/tv_user_session_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="true" />
+            </FrameLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <View android:id="@id/toolbar_shadow" style="@style/Divider" />
+        <ProgressBar android:id="@id/us_progress_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="true" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+        <FrameLayout android:id="@id/content_container" android:background="@color/user_session_content_bg" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:importantForAccessibility="yes" />
+        <include android:id="@id/navigation_panel" layout="@layout/view_navigation_panel" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

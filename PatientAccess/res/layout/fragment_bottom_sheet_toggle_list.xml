@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_bottom_sheet_toggle_list_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_size_18" android:id="@id/tv_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:text="@string/text_content_pref_description" android:lineSpacingMultiplier="1.5" android:layout_marginStart="@dimen/margin_big" android:layout_marginEnd="@dimen/margin_big" style="@style/DarkGrayRegularText" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/pb_detail_loader" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_50" android:layout_marginBottom="@dimen/margin_50" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_toggleList" android:visibility="gone" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/margin_small" android:paddingEnd="@dimen/margin_small" android:nestedScrollingEnabled="false" />
+</LinearLayout>

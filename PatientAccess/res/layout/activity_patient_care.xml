@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/vg_proxy_user_alert" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_height" app:layout_constraintTop_toBottomOf="@id/vg_proxy_user_alert" />
+    <TextView android:id="@id/tv_service_title" android:paddingBottom="@dimen/padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/padding_medium" android:paddingEnd="@dimen/padding_medium" app:layout_constraintTop_toBottomOf="@id/toolbar" app:layout_goneMarginTop="@dimen/margin_big" style="@style/NavyBoldTitle" />
+    <View android:id="@id/title_divider" app:layout_constraintTop_toBottomOf="@id/tv_service_title" style="@style/Divider" />
+    <FrameLayout android:id="@id/container_fragment" android:background="@color/background_gray" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/title_divider" />
+</androidx.constraintlayout.widget.ConstraintLayout>

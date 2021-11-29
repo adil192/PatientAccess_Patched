@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_pa_read_category_view_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/error_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/view_triage_error_layout" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/read_menu_container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium" android:weightSum="4.0">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/font_size_18" android:gravity="center_vertical" android:id="@id/tv_topic_name" android:layout_width="0.0dip" android:layout_height="fill_parent" android:maxLines="2" android:layout_weight="2.5" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_small" style="@style/DefaultLatoBoldFamily" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout_follow" android:tag="binding_1" android:background="@drawable/appointmemnt_mode_button_un_selected" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.5" android:layout_marginEnd="@dimen/margin_medium">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_follow_icon" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_follow" android:layout_marginEnd="@dimen/margin_small" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/font_size_16" android:gravity="center" android:id="@id/tv_follow" android:paddingTop="@dimen/margin_medium" android:paddingBottom="@dimen/margin_medium" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/category_follow" style="@style/LatoBoldGrey" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/top_divider" style="@style/Divider" />
+    <ProgressBar android:id="@id/pcProgressBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="true" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_feeds" android:background="@color/background_gray" android:paddingBottom="@dimen/margin_small" android:visibility="gone" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" />
+</LinearLayout>

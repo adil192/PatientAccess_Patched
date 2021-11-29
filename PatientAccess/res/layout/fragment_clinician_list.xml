@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center" android:id="@id/pb_clinician" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/font_size_20" android:textColor="@color/book_appointment_select_time_no_clinicians_font" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_no_available_appointments" android:visibility="gone" android:layout_width="@dimen/book_appointment_select_time_no_clinicians_width" android:layout_height="wrap_content" android:text="@string/book_appointment_select_time_no_available_clinicians" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_clinicians" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

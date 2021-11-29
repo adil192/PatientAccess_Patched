@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:orientation="vertical" android:tag="layout/item_location_0" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/radius_12" app:cardElevation="@dimen/card_elevation" app:contentPadding="@dimen/padding_medium" style="@style/CardViewStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_map" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/margin_medium">
+            <TextView android:id="@id/tv_location_name" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/NavyBoldTitle" />
+            <TextView android:id="@id/tv_location_address" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_smallest" style="@style/DarkGrayRegularText" />
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_location_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_location_arrow" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

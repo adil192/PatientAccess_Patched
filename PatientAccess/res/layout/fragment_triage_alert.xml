@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:tag="layout/fragment_triage_alert_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:background="@drawable/bg_dialog_round_corners" android:paddingTop="@dimen/padding_big" android:paddingBottom="@dimen/padding_big" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/padding_medium" android:paddingEnd="@dimen/padding_medium">
+        <TextView android:textColorLink="@color/link_color" android:id="@id/tv_alert_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" style="@style/NavyRegularText" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/btn_action" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_huge" android:layout_below="@id/tv_alert_content" style="@style/PinkButton" />
+    </RelativeLayout>
+</ScrollView>

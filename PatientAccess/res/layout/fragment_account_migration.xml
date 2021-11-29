@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_account_migration_0" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_migration_email_title" android:layout_marginStart="@dimen/margin_medium" style="@style/NavyBoldTitle" />
+    <View android:layout_marginTop="@dimen/margin_medium" style="@style/Divider" />
+    <ProgressBar android:id="@id/pb_account_migration" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="true" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/bg_notification_message" android:padding="@dimen/padding_big" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/font_size_15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/text_home_migration_email_message" style="@style/NavyRegularText" />
+                <TextView android:textSize="@dimen/font_size_15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_huge" android:text="@string/text_migration_email_verify_info_message" style="@style/NavyRegularText" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/font_size_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/text_first_name" android:layout_marginStart="@dimen/margin_small" style="@style/NavyBoldTitle" />
+            <com.patientaccess.validation.widget.ValidatedEditTextView android:id="@id/et_first_name" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:hint="@string/text_hint_first_name" android:maxLength="@integer/name_length_limit_big" />
+            <TextView android:textSize="@dimen/font_size_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big" android:text="@string/text_last_name" android:layout_marginStart="@dimen/margin_small" style="@style/NavyBoldTitle" />
+            <com.patientaccess.validation.widget.ValidatedEditTextView android:id="@id/et_last_name" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:hint="@string/text_hint_last_name" android:maxLength="@integer/last_name_length_limit" />
+            <TextView android:textSize="@dimen/font_size_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big" android:text="@string/text_email_address" android:layout_marginStart="@dimen/margin_small" style="@style/NavyBoldTitle" />
+            <com.patientaccess.validation.widget.ValidatedEditTextView android:id="@id/et_email" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:hint="@string/text_hint_email_address" android:maxLength="@integer/email_length_limit" android:inputType="textEmailAddress" />
+            <TextView android:textSize="@dimen/font_size_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big" android:text="@string/text_password" android:layout_marginStart="@dimen/margin_small" style="@style/NavyBoldTitle" />
+            <com.patientaccess.validation.widget.ValidatedEditTextView android:id="@id/et_password" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_medium" android:hint="@string/text_hint_password" android:maxLength="@integer/password_length_limit" android:inputType="textPassword" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium" android:baselineAligned="false">
+                <androidx.appcompat.widget.AppCompatCheckBox android:theme="@style/AppTheme.CheckboxStyle" android:id="@id/ch_marketing_email_consent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" />
+                <TextView android:paddingTop="@dimen/padding_smallest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_marketing_email_consent_message" style="@style/NavyRegularText" />
+            </LinearLayout>
+            <Button android:layout_gravity="center_horizontal" android:id="@id/btn_submit" android:layout_marginTop="@dimen/margin_big" android:layout_marginBottom="@dimen/margin_small" android:text="@string/text_submit" style="@style/PinkButton" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

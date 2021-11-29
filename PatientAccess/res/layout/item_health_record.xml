@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/category_container" android:tag="layout/item_health_record_0" android:background="@android:color/white" android:paddingTop="@dimen/category_item_margin_top" android:paddingBottom="@dimen/category_item_margin_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/padding_small" android:paddingEnd="@dimen/padding_small"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_size_18" android:id="@id/tv_appointment_branch" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/NavyRegularText" />
+    <TextView android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_smallest" android:layout_marginEnd="@dimen/padding_big" style="@style/DarkGrayRegularText" />
+</LinearLayout>

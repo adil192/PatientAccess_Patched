@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_verify_email_warning_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:id="@id/pb_details" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="true" style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal" />
+    <ScrollView android:id="@id/sv_message_parent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/background_gray" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_53" android:layout_marginBottom="@dimen/margin_big" android:text="@string/email_verify_title" android:layout_marginStart="@dimen/dp_36" android:layout_marginEnd="@dimen/dp_36" style="@style/NavyBoldDialogTitle" />
+            <androidx.cardview.widget.CardView android:orientation="vertical" android:id="@id/trending_card_view" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_big" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" app:cardCornerRadius="@dimen/card_radius" app:cardElevation="@dimen/card_elevation" style="@style/CardViewStyle">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/margin_big">
+                    <TextView android:id="@id/txt_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_huge" style="@style/DefaultLatoRegularText" />
+                    <Button android:gravity="center" android:layout_gravity="center" android:id="@id/btn_go_to_account" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big" android:layout_marginBottom="@dimen/margin_huge" android:text="@string/email_verify_btn_account_settings" style="@style/PinkBorderWhiteBgButton" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <TextView android:layout_gravity="center" android:id="@id/txt_skip_now" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_big" android:text="@string/email_verify_skip_link" style="@style/PinkBoldText" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

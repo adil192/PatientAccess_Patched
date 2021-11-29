@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:tag="layout/fragment_service_care_provider_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:map="http://schemas.android.com/apk/res-auto">
+    <com.patientaccess.util.ui.TouchWrapper android:id="@id/map_touch_detector_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <fragment android:name="com.google.android.gms.maps.SupportMapFragment" android:id="@id/map" android:layout_width="fill_parent" android:layout_height="fill_parent" map:mapType="normal" map:uiCompass="false" map:uiRotateGestures="true" map:uiScrollGestures="true" map:uiTiltGestures="true" map:uiZoomControls="false" map:uiZoomGestures="true" />
+    </com.patientaccess.util.ui.TouchWrapper>
+    <ProgressBar android:layout_gravity="top" android:id="@id/pc_progress_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="true" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+    <LinearLayout android:orientation="vertical" android:id="@id/bottom_sheet" android:layout_width="fill_parent" android:layout_height="fill_parent" map:behavior_defaultState="anchored" map:behavior_peekHeight="80.0dip" map:layout_behavior="com.trafi.anchorbottomsheetbehavior.AnchorBottomSheetBehavior">
+        <Button android:layout_gravity="center" android:id="@id/btn_update_result" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="38.0dip" android:layout_marginBottom="@dimen/appointment_margin_10" android:text="@string/update_result" style="@style/SmallBlueButton" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_bottom_sheet_with_light_gray_dialog" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:id="@id/bottomsheet_holder_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:layout_gravity="center" android:background="@drawable/bottom_sheet_handle" android:layout_width="32.0dip" android:layout_height="4.0dip" android:layout_marginTop="@dimen/radius_6" android:layout_marginBottom="@dimen/radius_6" />
+                </LinearLayout>
+                <FrameLayout android:id="@id/bottom_sheet_fragment_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

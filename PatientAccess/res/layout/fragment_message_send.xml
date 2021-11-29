@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/fragment_message_send_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/tv_title" android:background="@android:color/white" android:paddingBottom="@dimen/padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/messages_send_title" android:layout_marginStart="@dimen/margin_medium" style="@style/NavyBoldTitle" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/vg_button" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View style="@style/Divider" />
+        <Button android:id="@id/btn_send_message" android:layout_width="fill_parent" android:layout_margin="@dimen/margin_medium" android:text="@string/messages_send_message_text" style="@style/PinkButton" />
+    </LinearLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/vg_button" android:layout_below="@id/tv_title">
+        <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:paddingTop="@dimen/padding_small" android:paddingBottom="@dimen/padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/padding_medium" android:paddingEnd="@dimen/padding_medium">
+            <androidx.cardview.widget.CardView android:id="@id/non_urgent_warning_container" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_big" app:cardBackgroundColor="@color/notification_information" app:cardCornerRadius="@dimen/radius_12" app:cardElevation="0.0dip" app:contentPadding="@dimen/padding_medium" style="@style/CardViewStyle">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/non_urgent_queries_warning_message" style="@style/NavyRegularText" />
+            </androidx.cardview.widget.CardView>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_smallest" android:text="@string/messages_recipient_text" style="@style/NavyBoldSubTitle" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_filter_spinner_border" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small">
+                <Spinner android:id="@id/recipients_spinner" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:popupBackground="@android:color/white" android:layout_weight="1.0" />
+                <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/margin_medium" app:srcCompat="@drawable/ic_arrow_down" />
+            </LinearLayout>
+            <TextView android:id="@id/tv_recipients_validation" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginStart="@dimen/margin_small" style="@style/ValidationText" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/messages_subject_text" style="@style/NavyBoldSubTitle" />
+            <com.patientaccess.validation.widget.ValidatedEditTextView android:id="@id/et_subject" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:hint="@string/messages_enter_subject_text" android:maxLength="@integer/message_subject_text_length" android:inputType="text" android:imeOptions="actionNext" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/messages_message_text" style="@style/NavyBoldSubTitle" />
+            <com.patientaccess.validation.widget.ValidatedEditTextView android:id="@id/et_message" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:hint="@string/messages_enter_message_text" android:lines="@integer/message_text_lines" android:maxLength="@integer/message_text_length" android:inputType="textMultiLine" app:counterEnabled="true" app:counterMaxLength="@integer/message_digit_limit" app:counterTextAppearance="@style/TextCounter" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

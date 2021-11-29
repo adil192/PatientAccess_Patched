@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/view_migration_message_0" android:background="@color/notification_warning" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:importantForAccessibility="no" app:layout_constraintEnd_toStartOf="@id/btn_close" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="@dimen/font_size_15" android:id="@id/tv_migration_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_smallest" android:importantForAccessibility="no" style="@style/NavyBoldTitle" />
+        <TextView android:textSize="@dimen/font_size_15" android:id="@id/tv_migration_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="yes" style="@style/NavyRegularText" />
+        <TextView android:textSize="@dimen/font_size_15" android:id="@id/btn_migration_action" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:importantForAccessibility="yes" style="@style/LinkBigBoldText" />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/btn_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="Close button" android:importantForAccessibility="yes" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_cross_gray" />
+</androidx.constraintlayout.widget.ConstraintLayout>

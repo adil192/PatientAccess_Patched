@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/fragment_select_prescription_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:id="@id/pb_prescriptions" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="true" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_medication_to_select" android:paddingBottom="@dimen/prescription_list_padding_bottom" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/padding_medium" android:paddingEnd="@dimen/padding_medium" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/select_prescription_counter_container" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/request_prescription_bottom_panel_padding_vertical" android:paddingBottom="@dimen/request_prescription_bottom_panel_padding_vertical" android:focusable="true" android:clickable="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/font_size_14" android:id="@id/tv_select_medication_count" android:tag="binding_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/margin_huge" style="@style/DarkNavyRegularText" />
+            <Button android:textColor="@android:color/white" android:id="@id/btn_select_medication_next" android:layout_width="@dimen/request_prescription_bottom_panel_btn_width" android:layout_height="@dimen/request_prescription_bottom_panel_btn_height" android:text="@string/text_next" android:layout_marginEnd="@dimen/request_prescription_bottom_panel_margin_end" style="@style/PinkButton" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_toast_tooltip" android:paddingTop="@dimen/padding_small" android:paddingBottom="@dimen/padding_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/padding_medium" android:paddingEnd="@dimen/padding_medium"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_tooltip_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.25" android:textAlignment="center" style="@style/TooltipStyle" />
+</LinearLayout>

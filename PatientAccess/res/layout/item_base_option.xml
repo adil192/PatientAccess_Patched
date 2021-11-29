@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/item_container" android:tag="layout/item_base_option_0" android:paddingTop="@dimen/padding_big" android:paddingBottom="@dimen/padding_big" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_item_icon" android:tag="binding_1" android:visibility="gone" android:layout_width="@dimen/common_item_icon_size" android:layout_height="@dimen/common_item_icon_size" android:layout_weight="0.0" />
+    <TextView android:id="@id/tv_item_title" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/NavyRegularText" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0" android:layout_marginStart="@dimen/margin_big" app:srcCompat="@drawable/ic_arrow_right" />
+</LinearLayout>

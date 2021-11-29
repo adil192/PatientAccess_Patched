@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/view_navigation_panel_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RadioGroup android:orientation="horizontal" android:id="@id/user_session_navigation" android:background="@android:color/white" android:paddingTop="@dimen/navigation_panel_padding_top" android:paddingBottom="@dimen/padding_smallest" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="Navigation menus">
+        <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/navigation_home" android:tag="binding_1" android:text="@string/text_navigation_home" android:drawableTop="@drawable/ic_navigation_home" android:contentDescription="Home Menu" android:importantForAccessibility="yes" style="@style/NavigationRadioButton" />
+        <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/navigation_hub" android:tag="binding_2" android:drawableTop="@drawable/ic_navigation_covid" android:importantForAccessibility="yes" style="@style/NavigationRadioButton" />
+        <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/navigation_appointments" android:tag="binding_3" android:text="@string/text_navigation_appointments" android:drawableTop="@drawable/ic_navigation_book" android:contentDescription="@string/text_navigation_appointments" android:importantForAccessibility="yes" style="@style/NavigationRadioButton" />
+        <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/navigation_prescriptions" android:tag="binding_4" android:importantForAccessibility="yes" style="@style/NavigationRadioButton" />
+        <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/navigation_more" android:tag="binding_5" android:text="@string/text_navigation_more" android:drawableTop="@drawable/ic_navigation_more" android:contentDescription="@string/text_navigation_more" android:importantForAccessibility="yes" style="@style/NavigationRadioButton" />
+    </RadioGroup>
+</LinearLayout>

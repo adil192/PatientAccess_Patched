@@ -1,0 +1,21 @@
+.class public abstract Ll/a/h/o;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public abstract engineGetMatches(Ll/a/g/m;)Ljava/util/Collection;
+.end method
+
+.method public abstract engineInit(Ll/a/h/n;)V
+.end method

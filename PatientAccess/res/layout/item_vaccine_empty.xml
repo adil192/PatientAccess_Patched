@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/vaccine_empty_section" android:tag="layout/item_vaccine_empty_0" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_big"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="start" android:id="@id/vaccine_empty_title" android:paddingTop="@dimen/margin_smallest" android:paddingBottom="@dimen/margin_smallest" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/home_vaccination_Empty_title" style="@style/NavyLatoBlack16" />
+    <TextView android:gravity="start" android:id="@id/vaccine_empty_description" android:paddingTop="@dimen/margin_smallest" android:paddingBottom="@dimen/margin_smallest" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/home_vaccination_Empty_description" android:lineSpacingMultiplier="1.3" style="@style/MedicationsTextAppearance" />
+</LinearLayout>

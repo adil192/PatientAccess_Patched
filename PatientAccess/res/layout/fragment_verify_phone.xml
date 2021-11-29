@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_verify_phone_0" android:background="@color/user_session_content_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_verify_phone_title" android:layout_marginStart="@dimen/margin_medium" style="@style/NavyBoldTitle" />
+        <TextView android:id="@id/tv_verify_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" style="@style/DarkGrayRegularText" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/text_verify_phone_description" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" style="@style/DarkGrayRegularText" />
+        <View android:layout_marginTop="@dimen/margin_medium" style="@style/Divider" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/font_size_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big" android:text="@string/text_verify_phone_security_code" android:layout_marginStart="@dimen/margin_medium" style="@style/NavyBoldTitle" />
+    <com.patientaccess.validation.widget.ValidatedEditTextView android:id="@id/et_verify_phone_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_medium" android:hint="@string/text_verify_phone_security_code_hint" android:maxLength="@integer/code_limit" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/pb_verification" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="true" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/btn_verify_phone_submit" android:text="@string/text_verify_phone_submit" style="@style/PinkButton" />
+    <TextView android:textSize="@dimen/font_size_16" android:layout_gravity="center_horizontal" android:id="@id/tv_verify_phone_send_code_again" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_huge" style="@style/NavyRegularText" />
+</LinearLayout>

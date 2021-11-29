@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/padding_medium" android:paddingEnd="@dimen/padding_medium"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginEnd="@dimen/medical_records_filter_item_margin_end"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <TextView android:textSize="@dimen/font_size_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/medical_records_date_filter_from_title" style="@style/NavyBoldTitle" />
+            <EditText android:textSize="@dimen/medical_records_date_filter_picker_font_size" android:textColor="@color/medical_records_item_title_font_color" android:id="@id/date_picker_from_date" android:background="@drawable/bg_date_picker" android:padding="@dimen/medical_records_date_filter_picker_padding" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/medical_records_date_filter_picker_margin_top" android:hint="@string/medical_records_date_filter_picker_from_hint" android:inputType="none" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <TextView android:textSize="@dimen/font_size_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/medical_records_date_filter_to_title" style="@style/NavyBoldTitle" />
+            <EditText android:textSize="@dimen/medical_records_date_filter_picker_font_size" android:textColor="@color/medical_records_item_title_font_color" android:id="@id/date_picker_to_date" android:background="@drawable/bg_date_picker" android:padding="@dimen/medical_records_date_filter_picker_padding" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/medical_records_date_filter_picker_margin_top" android:hint="@string/medical_records_date_filter_picker_to_hint" android:inputType="none" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/font_size_16" android:textStyle="bold" android:layout_gravity="center_horizontal" android:id="@id/tv_clear_date_filters" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/medical_records_date_filter_clear_filters" style="@style/PinkBoldText" />
+    <View android:background="@color/default_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/medical_records_filter_divider" />
+</LinearLayout>

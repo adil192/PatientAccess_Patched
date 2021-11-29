@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="more_num_linked_users">
+        <item quantity="other">%d linked users</item>
+        <item quantity="one">%d linked user</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d new notifications</item>
+        <item quantity="one">%d new notification</item>
+    </plurals>
+    <plurals name="text_medications_selected">
+        <item quantity="other">%d medications selected</item>
+        <item quantity="one">%d medication selected</item>
+    </plurals>
+    <plurals name="text_prescriptions_medication_duration_days">
+        <item quantity="other">%d days</item>
+        <item quantity="one">%d day</item>
+    </plurals>
+    <plurals name="text_request_prescription_more_drugs">
+        <item quantity="other">+ %d more items</item>
+        <item quantity="one">+ %d more item</item>
+    </plurals>
+</resources>

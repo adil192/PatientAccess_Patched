@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button android:layout_gravity="center_horizontal" android:id="@id/btn_continue" android:layout_width="fill_parent" android:layout_marginTop="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_medium" android:text="@string/text_send" android:layout_marginStart="@dimen/margin_big" android:layout_marginEnd="@dimen/margin_big" style="@style/PinkButton"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

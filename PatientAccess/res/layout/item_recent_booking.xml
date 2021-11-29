@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:orientation="vertical" android:id="@id/recent_appointment_container" android:tag="layout/item_recent_booking_0" android:background="@android:color/white" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/radius_12" app:cardElevation="@dimen/card_elevation" app:contentPadding="@dimen/padding_big" style="@style/CardViewStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:gravity="top" android:id="@id/tv_appointment_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="3" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/NavyBoldTitle" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_icon_type" android:layout_width="@dimen/icon_size_14" android:layout_height="@dimen/icon_size_14" android:layout_marginTop="26.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_appointment_title" />
+        <TextView android:gravity="bottom" android:id="@id/tv_appointment_location" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big" android:maxLines="2" android:layout_marginStart="@dimen/margin_small" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/iv_icon_type" app:layout_constraintTop_toBottomOf="@id/tv_appointment_title" style="@style/DarkGrayRegularText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

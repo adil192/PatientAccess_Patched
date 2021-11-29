@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_progress_dialog" android:padding="@dimen/padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/pb_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/appointment_margin_20" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/font_size_18" android:textColor="@color/color_waiting_room_progress_description" android:gravity="center" android:id="@id/tv_progress_description" android:padding="@dimen/padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/pb_dialog" />
+    <TextView android:textColor="@color/color_leave_call" android:gravity="center" android:id="@id/tv_close" android:padding="@dimen/padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/toolbar_close" android:layout_below="@id/tv_progress_description" style="@style/NavyBoldTitle" />
+</RelativeLayout>

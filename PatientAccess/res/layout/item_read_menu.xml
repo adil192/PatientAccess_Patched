@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:orientation="vertical" android:id="@id/read_menu_container" android:tag="layout/item_read_menu_0" android:focusable="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="yes" app:cardCornerRadius="@dimen/radius_12" app:cardElevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/font_size_16" android:id="@id/tv_menu_name" android:background="@drawable/bg_read_menu" android:paddingTop="@dimen/dp_14" android:paddingBottom="@dimen/dp_14" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="@dimen/margin_medium" android:paddingEnd="@dimen/margin_medium" style="@style/DefaultLatoBoldFamily" />
+</androidx.cardview.widget.CardView>

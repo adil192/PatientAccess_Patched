@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/item_notification_0" android:paddingTop="@dimen/notification_item_padding" android:paddingBottom="@dimen/notification_item_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/padding_medium" android:paddingEnd="@dimen/padding_medium"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColorLink="@color/secondary" android:id="@id/tv_message" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/DarkNavyRegularText" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_delete" android:padding="@dimen/padding_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/desc_close_button" android:layout_marginStart="@dimen/margin_small" app:srcCompat="@drawable/ic_cross_gray" />
+</LinearLayout>

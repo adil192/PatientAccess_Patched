@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_more_feature_options_0" android:background="@color/user_session_content_bg" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/section_header" android:background="@android:color/white" android:padding="@dimen/padding_big" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_size_18" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_avatar" android:background="@drawable/bg_user_avatar" android:layout_width="@dimen/more_ic_avatar_size" android:layout_height="@dimen/more_ic_avatar_size" android:layout_marginEnd="@dimen/margin_medium" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center_vertical" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/NavyBoldTitle" />
+            <TextView android:textSize="@dimen/font_size_16" android:gravity="center_vertical" android:id="@id/tv_open_profile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more_label_open_profile" style="@style/LinkBigBoldText" />
+        </LinearLayout>
+    </LinearLayout>
+    <View style="@style/Divider" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/pb_options" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="true" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+    <androidx.core.widget.NestedScrollView android:background="@color/user_session_content_bg" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/padding_medium" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/section_practice_and_linked_users" android:background="@drawable/bg_white_grey_border" android:padding="@dimen/padding_big" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium">
+                <TextView android:layout_gravity="center_vertical" android:id="@id/tv_num_linked_users" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/NavyRegularText" />
+                <TextView android:textSize="@dimen/font_size_16" android:id="@id/tv_switch_user" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more_label_switch_user" style="@style/LinkBigBoldText" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/features_container" android:background="@drawable/bg_white_grey_border" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_features" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="@dimen/margin_big" android:layout_marginEnd="@dimen/margin_big" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/section_about" android:background="@drawable/bg_white_grey_border" android:padding="@dimen/padding_big" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_most" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" app:cardCornerRadius="@dimen/radius_12" app:contentPadding="@dimen/padding_big">
+                <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/text_about" android:layout_weight="1.0" style="@style/NavyRegularText" />
+                <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_arrow_right" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

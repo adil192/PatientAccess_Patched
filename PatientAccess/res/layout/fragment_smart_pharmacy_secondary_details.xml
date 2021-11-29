@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_smart_pharmacy_secondary_details_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big">
+        <androidx.appcompat.widget.AppCompatTextView android:id="@id/tv_about_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/text_abt_nominated_pharmacy" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" style="@style/NavyLatoBlack16" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/layout_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_big">
+            <androidx.appcompat.widget.AppCompatTextView android:id="@id/tv_about_desc" android:tag="binding_2" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.5" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/DefaultLatoRegularText" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/font_size_14" android:id="@id/tv_about_read_more" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/text_read_more" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_about_desc" style="@style/PinkBoldText14" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View style="@style/Divider" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:tag="binding_3" android:background="@color/background_gray" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:id="@id/tv_available_service_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big" android:text="@string/text_available_service" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" style="@style/NavyLatoBlack16" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_services_list" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" />
+        <View style="@style/Divider" />
+    </LinearLayout>
+    <include android:id="@id/layout_opening_hrs" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big" android:layout_marginStart="@dimen/margin_medium" layout="@layout/view_smart_pharm_schedule" />
+    <View style="@style/Divider" />
+    <LinearLayout android:orientation="vertical" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:id="@id/tv_contact_details" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big" android:text="@string/text_view_contact_details" android:layout_marginStart="@dimen/margin_medium" style="@style/NavyLatoBlack16" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_contact_details_parent" android:tag="binding_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginStart="@dimen/margin_medium">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/ic_mode_telephone_pink" android:layout_marginEnd="@dimen/margin_small" />
+            <androidx.appcompat.widget.AppCompatTextView android:id="@id/tv_phone_number" android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/PinkBoldText" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_mail_parent" android:tag="binding_7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginStart="@dimen/margin_medium" style="@style/DefaultLatoBoldText16">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/ic_icon_email" android:layout_marginEnd="@dimen/margin_small" />
+            <androidx.appcompat.widget.AppCompatTextView android:id="@id/tv_mailId" android:tag="binding_8" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DefaultLatoRegularText" />
+        </LinearLayout>
+        <View android:layout_marginTop="@dimen/margin_big" style="@style/Divider" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout_address_direction_parent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:baselineAligned="false" android:weightSum="2.0" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" style="@style/DefaultLatoBoldText16">
+        <LinearLayout android:gravity="start" android:orientation="vertical" android:id="@id/layout_address_parent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <androidx.appcompat.widget.AppCompatTextView android:id="@id/tv_address_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_view_address" style="@style/NavyLatoBlack16" />
+            <androidx.appcompat.widget.AppCompatTextView android:id="@id/tv_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big" android:lineSpacingMultiplier="1.75" style="@style/DefaultLatoRegularText" />
+        </LinearLayout>
+        <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:id="@id/layout_direction_parent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/ic_location_pink" android:layout_marginEnd="@dimen/margin_small" />
+            <androidx.appcompat.widget.AppCompatTextView android:id="@id/tv_direction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_view_get_direction" style="@style/PinkBoldText" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

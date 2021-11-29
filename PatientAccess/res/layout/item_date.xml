@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:tag="layout/item_date_0" android:paddingBottom="@dimen/padding_small" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_size_10" android:textColor="@drawable/bg_tab_date_text_color_selector" android:id="@id/tv_day_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_smallest" android:textAllCaps="true" style="@style/DarkNavyRegularText" />
+    <CheckedTextView android:textSize="@dimen/font_size_14" android:textStyle="bold" android:textColor="@drawable/bg_tab_date_text_color_selector" android:gravity="center" android:id="@id/tv_day" android:background="@drawable/bg_tab_date_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="center" style="@style/LatoFontFamily" />
+</LinearLayout>

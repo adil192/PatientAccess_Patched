@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="function_types">
+        <item>Appointments</item>
+        <item>Contact Details</item>
+        <item>Medical Record</item>
+        <item>Messages</item>
+        <item>Online Registration</item>
+        <item>Online Services</item>
+        <item>New Patient Registration</item>
+        <item>Repeat Medication</item>
+        <item>Nominate Pharmacy</item>
+    </string-array>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_generate_user_id_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_height" app:navigationIcon="@drawable/ic_back" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/padding_small" android:paddingBottom="@dimen/padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/padding_medium" android:paddingEnd="@dimen/padding_medium">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/text_generate_user_id_header" style="@style/NavyBoldSubTitle" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big" android:text="@string/text_practice_id" android:layout_marginStart="@dimen/margin_small" style="@style/NavyBoldSubTitle" />
+            <com.patientaccess.validation.widget.ValidatedEditTextView android:id="@id/et_practice_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:hint="@string/text_practice_id" android:maxLength="@integer/access_id_practice_id_length_limit" android:inputType="number" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big" android:text="@string/text_access_id" android:layout_marginStart="@dimen/margin_small" style="@style/NavyBoldSubTitle" />
+            <com.patientaccess.validation.widget.ValidatedEditTextView android:id="@id/et_access_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:hint="@string/text_access_id" android:maxLength="@integer/access_id_practice_id_length_limit" android:inputType="number" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big" android:text="@string/text_generate_user_id_tip" style="@style/DarkGrayRegularText" />
+            <Button android:id="@id/btn_get_user_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big" android:text="@string/text_button_generate_user_id" style="@style/PinkButton" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

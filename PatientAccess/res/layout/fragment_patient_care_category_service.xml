@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_patient_care_category_service_0" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/layout_service_search" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium" layout="@layout/activity_search" />
+    <View style="@style/Divider" />
+    <FrameLayout android:tag="binding_1" android:background="@color/background_gray" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.core.widget.NestedScrollView android:id="@id/sv_patient_care_category_service" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:id="@id/tv_pharmacy_description" android:background="@color/background_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big" android:lineSpacingMultiplier="1.5" android:paddingStart="@dimen/margin_medium" android:paddingEnd="@dimen/margin_medium" android:breakStrategy="simple" style="@style/MedicationsTextAppearance" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_services" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <include android:layout_gravity="center" android:id="@id/no_search_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/margin_big" layout="@layout/fragment_patient_care_service_no_search_result" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/pb_loader" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>

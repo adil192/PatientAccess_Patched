@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_root_container" android:tag="layout/fragment_smart_pharmacy_details_0" android:background="@color/white" android:fitsSystemWindows="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:layout_gravity="center" android:id="@id/pb_loader" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:indeterminate="true" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_pharmacy_primary_parent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/layout_details_parent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big" android:layout_marginBottom="@dimen/margin_big" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium">
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_name_parent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/margin_big" app:layout_constraintEnd_toStartOf="@id/pharmacy_icon" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <com.patientaccess.util.ui.MerriWeatherFontTextView android:textSize="@dimen/font_size_18" android:gravity="start" android:id="@id/tv_pharmacy_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DefaultLatoBoldText16" />
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/font_size_16" android:gravity="start" android:id="@id/tv_pharmacy_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/text_view_smart_pharmacy" style="@style/BlueNormalTitle" />
+            </LinearLayout>
+            <androidx.cardview.widget.CardView android:id="@id/pharmacy_icon" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/radius_12" app:cardElevation="0.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_pharmacy_icon" android:layout_width="83.0dip" android:layout_height="83.0dip" android:src="@drawable/ic_nhs_logo" android:scaleType="fitXY" />
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View android:id="@id/top_divider" style="@style/Divider" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/layout_call_location_parent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:weightSum="2.0">
+            <LinearLayout android:gravity="center" android:id="@id/layout_dial_parent" android:tag="binding_2" android:padding="@dimen/padding_medium" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <androidx.appcompat.widget.AppCompatImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/ic_mode_telephone_pink" android:layout_marginEnd="@dimen/margin_small" />
+                <androidx.appcompat.widget.AppCompatTextView android:id="@id/tv_profile_dial_number" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/PinkBoldText" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/layout_direction_parent" android:tag="binding_4" android:padding="@dimen/padding_medium" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <androidx.appcompat.widget.AppCompatImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/ic_location_pink" android:layout_marginEnd="@dimen/margin_small" />
+                <androidx.appcompat.widget.AppCompatTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_pharmacy_get_directions" style="@style/PinkBoldText" />
+            </LinearLayout>
+        </LinearLayout>
+        <View style="@style/Divider" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_pharmacy_secondary_parent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/layout_detail_secondary_parent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big" android:layout_marginBottom="@dimen/margin_big" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium">
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_name_secondary_parent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/margin_big" app:layout_constraintEnd_toStartOf="@id/pharmacy_secondary_logo" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <com.patientaccess.util.ui.MerriWeatherFontTextView android:gravity="start" android:id="@id/tv_pharmacy_secondary_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DefaultLatoBoldText16" />
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/font_size_16" android:gravity="start" android:id="@id/tv_pharmacy_secondary_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/text_view_smart_pharmacy" style="@style/BlueNormalTitle" />
+            </LinearLayout>
+            <androidx.cardview.widget.CardView android:id="@id/pharmacy_secondary_logo" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/radius_12" app:cardElevation="0.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_pharmacy_secondary_icon" android:layout_width="54.0dip" android:layout_height="54.0dip" android:src="@drawable/ic_nhs_logo" android:scaleType="fitXY" />
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View style="@style/Divider" />
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView android:id="@id/nsv_scrollview" android:visibility="visible" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:tag="binding_6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_big">
+            <include android:id="@id/layout_secondary_details" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/fragment_smart_pharmacy_secondary_details" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,107 @@
+.class public final Lcom/patientaccess/u/l/t;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field private final a:Ljava/lang/String;
+
+.field private final b:Ljava/lang/String;
+
+.field private final c:Lcom/patientaccess/u/l/p;
+
+.field private final d:Ljava/lang/String;
+
+.field private final e:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lcom/patientaccess/u/l/e;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Lcom/patientaccess/u/l/p;Ljava/lang/String;Ljava/util/List;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "Lcom/patientaccess/u/l/p;",
+            "Ljava/lang/String;",
+            "Ljava/util/List<",
+            "+",
+            "Lcom/patientaccess/u/l/e;",
+            ">;)V"
+        }
+    .end annotation
+
+    const-string v0, "articlesModel"
+
+    invoke-static {p5, v0}, Lh/c0/d/m;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/patientaccess/u/l/t;->a:Ljava/lang/String;
+
+    iput-object p2, p0, Lcom/patientaccess/u/l/t;->b:Ljava/lang/String;
+
+    iput-object p3, p0, Lcom/patientaccess/u/l/t;->c:Lcom/patientaccess/u/l/p;
+
+    iput-object p4, p0, Lcom/patientaccess/u/l/t;->d:Ljava/lang/String;
+
+    iput-object p5, p0, Lcom/patientaccess/u/l/t;->e:Ljava/util/List;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Ljava/util/List;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lcom/patientaccess/u/l/e;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/patientaccess/u/l/t;->e:Ljava/util/List;
+
+    return-object v0
+.end method
+
+.method public final b()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/patientaccess/u/l/t;->d:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final c()Lcom/patientaccess/u/l/p;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/patientaccess/u/l/t;->c:Lcom/patientaccess/u/l/p;
+
+    return-object v0
+.end method
+
+.method public final d()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/patientaccess/u/l/t;->b:Ljava/lang/String;
+
+    return-object v0
+.end method

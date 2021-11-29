@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/medication_container" android:tag="layout/item_medication_0" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/radius_12" app:cardElevation="@dimen/card_elevation" app:contentPadding="@dimen/padding_big" style="@style/CardViewStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/font_size_18" android:id="@id/tv_medication_name" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/NavyRegularText" />
+        <TextView android:id="@id/tv_medication_date" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_smallest" style="@style/DarkGrayRegularText" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+            <View android:background="@drawable/bg_vertical_divider" android:layout_width="@dimen/prescriptions_requests_divider_width" android:layout_height="fill_parent" android:layout_marginEnd="@dimen/margin_medium" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/tv_medication_instructions_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_instructions" style="@style/DarkGrayRegularText" />
+                <TextView android:id="@id/tv_medication_dosage" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_smallest" style="@style/DarkNavyRegularText" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

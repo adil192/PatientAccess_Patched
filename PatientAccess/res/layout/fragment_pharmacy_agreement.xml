@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_pharmacy_agreement_0" android:background="@color/user_session_content_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_nomination_agreement_title" android:background="@android:color/white" android:paddingBottom="@dimen/padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/text_nomination_pharmacy_agreement_title" android:paddingStart="@dimen/padding_medium" style="@style/NavyBoldTitle" />
+    <View android:id="@id/title_divider" style="@style/Divider" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:tag="binding_1" android:padding="@dimen/padding_medium" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/pharmacy" layout="@layout/item_location" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/text_nomination_pharmacy_agreement_description" style="@style/DarkGrayRegularText" />
+            <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/text_nomination_pharmacy_agreement_consent_title" style="@style/NavyBoldTitle" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:text="@string/text_nomination_pharmacy_agreement_note" style="@style/DarkGrayRegularText" />
+            <TextView android:id="@id/tv_pharmacy_agreement_url_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="@dimen/padding_medium" style="@style/DarkGrayRegularText" />
+            <TextView android:id="@id/tv_pharmacy_agreement" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/DarkGrayRegularText" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/view_terms_wrapper" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ProgressBar android:layout_gravity="center" android:id="@id/pb_agreement" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="true" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+        <View style="@style/Divider" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/btn_terms_agree" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_small" android:text="@string/text_nomination_pharmacy_agreement_agree" android:layout_marginStart="@dimen/agreement_button_margin_left" style="@style/PinkButton" />
+    </LinearLayout>
+</LinearLayout>

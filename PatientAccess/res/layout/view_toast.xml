@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:tag="layout/view_toast_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="fill" android:orientation="vertical" android:background="@drawable/bg_toast_primary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_medium">
+        <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/white" android:gravity="start" android:id="@id/tv_toast_message" android:paddingTop="@dimen/margin_medium" android:paddingBottom="@dimen/margin_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.2" android:paddingStart="@dimen/margin_big" android:paddingEnd="@dimen/margin_big" style="@style/NavyRegularText" />
+    </LinearLayout>
+</LinearLayout>

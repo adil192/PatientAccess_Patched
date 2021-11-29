@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:tag="layout/item_skip_branch_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_small" app:cardCornerRadius="@dimen/radius_12" app:cardElevation="@dimen/card_elevation" style="@style/CardViewStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/appointment_type_container" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_map" android:background="@drawable/ic_map" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_big" android:layout_marginBottom="@dimen/padding_big" android:layout_weight="0.0" android:layout_marginStart="@dimen/padding_medium" />
+        <TextView android:id="@id/tv_branch_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_smallest" android:text="@string/text_book_appointment_skip_branch" android:layout_weight="1.0" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_small" style="@style/DarkGrayRegularText" />
+        <ImageView android:id="@id/iv_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0" android:layout_marginEnd="@dimen/appointment_margin_12" app:srcCompat="@drawable/ic_arrow_right" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

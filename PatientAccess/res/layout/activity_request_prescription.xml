@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/activity_request_prescription_0" android:background="@color/user_session_content_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/vg_proxy_user_alert" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_height" />
+    <TextView android:id="@id/tv_prescription_step_title" android:background="@android:color/white" android:paddingBottom="@dimen/padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/padding_medium" android:paddingEnd="@dimen/padding_medium" style="@style/NavyBoldTitle" />
+    <View android:id="@id/title_divider" android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <FrameLayout android:id="@id/container_fragment" android:background="@color/user_session_content_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

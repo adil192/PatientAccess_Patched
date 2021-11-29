@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/record_container" android:tag="layout/item_gp_shared_record_0" android:background="@android:color/white" android:paddingTop="@dimen/default_cell_item_padding_top" android:paddingBottom="@dimen/default_cell_item_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/padding_big" style="@style/DarkGrayRegularText" />
+    <TextView android:textSize="@dimen/font_size_18" android:id="@id/tv_appointment_branch" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_smallest" style="@style/NavyRegularText" />
+    <TextView android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_smallest" style="@style/DarkGrayRegularText" />
+</LinearLayout>

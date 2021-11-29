@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:tag="layout/item_health_record_category_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_smallest" android:layout_marginBottom="@dimen/margin_smallest" app:cardCornerRadius="@dimen/radius_12" app:cardPreventCornerOverlap="true" app:contentPadding="@dimen/padding_big" app:elevation="@dimen/card_elevation" style="@style/CardViewStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/category_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/tv_appointment_branch" android:tag="binding_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/NavyRegularText" />
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_arrow_right" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

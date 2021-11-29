@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="@dimen/date_picker_pager_container_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RadioGroup android:orientation="horizontal" android:id="@id/rg_date_types" android:background="@android:color/white" android:paddingTop="@dimen/navigation_panel_padding_top" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RadioButton android:id="@id/date_picker_day_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/date_picker_day_title" android:paddingStart="@dimen/date_ranges_type_radio_group_button" android:paddingEnd="@dimen/date_ranges_type_radio_group_button" style="@style/DateTypeRadioButton" />
+        <RadioButton android:id="@id/date_picker_week_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/date_picker_week_title" android:paddingStart="@dimen/date_ranges_type_radio_group_button" android:paddingEnd="@dimen/date_ranges_type_radio_group_button" style="@style/DateTypeRadioButton" />
+        <RadioButton android:id="@id/date_picker_month_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/date_picker_month_title" android:paddingStart="@dimen/date_ranges_type_radio_group_button" android:paddingEnd="@dimen/date_ranges_type_radio_group_button" style="@style/DateTypeRadioButton" />
+        <RadioButton android:id="@id/date_picker_year_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/date_picker_year_title" android:paddingStart="@dimen/date_ranges_type_radio_group_button" android:paddingEnd="@dimen/date_ranges_type_radio_group_button" style="@style/DateTypeRadioButton" />
+    </RadioGroup>
+    <View style="@style/Divider" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/date_ranges_view_pager_margin_top">
+        <ImageButton android:id="@id/btn_date_previous" android:background="@android:color/white" android:layout_width="@dimen/date_picker_decrease_icon_size" android:layout_height="@dimen/date_picker_decrease_icon_size" app:srcCompat="@drawable/ic_gray_row_left" />
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/tv_date_picker_value" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DarkNavyBoldRegularText" />
+        <ImageButton android:id="@id/btn_date_next" android:background="@android:color/white" android:layout_width="@dimen/date_picker_decrease_icon_size" android:layout_height="@dimen/date_picker_decrease_icon_size" app:srcCompat="@drawable/ic_gray_row_right" />
+    </LinearLayout>
+</LinearLayout>

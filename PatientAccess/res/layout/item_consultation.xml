@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/appointment_type_container" android:tag="layout/item_consultation_0" android:background="@android:color/white" android:paddingTop="@dimen/consultation_item_content_padding_vertical" android:paddingBottom="@dimen/consultation_item_content_padding_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/consultation_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/consultation_item_text_margin_end">
+        <TextView android:textSize="@dimen/font_size_18" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/NavyRegularText" />
+        <TextView android:ellipsize="end" android:id="@id/tv_consultant_and_date" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_smallest" android:lines="1" style="@style/DarkGrayRegularText" />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_arrow_right" />
+</LinearLayout>

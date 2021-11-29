@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/fragment_linked_registration_create_account_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/title" android:background="@android:color/white" android:paddingBottom="@dimen/padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/registration_title_create_an_account" android:layout_alignParentTop="true" android:paddingStart="@dimen/padding_medium" android:paddingEnd="@dimen/padding_medium" style="@style/NavyBoldTitle" />
+    <View android:id="@id/divider" android:layout_below="@id/title" style="@style/Divider" />
+    <ScrollView android:id="@id/sv" android:paddingTop="@dimen/padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/vg_button_next" android:layout_below="@id/divider">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium">
+            <TextView android:id="@id/tv_your_email_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:text="@string/linked_registration_your_email_label" style="@style/NavyBoldSubTitle" />
+            <com.patientaccess.validation.widget.ValidatedEditTextView android:id="@id/vet_email" android:paddingBottom="@dimen/padding_big" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/linked_registration_your_email_hint" android:maxLength="@integer/email_length_limit" android:inputType="textEmailAddress" />
+            <TextView android:id="@id/tv_phone_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:text="@string/registration_phone_number_label" style="@style/NavyBoldSubTitle" />
+            <com.patientaccess.validation.widget.ValidatedEditTextView android:id="@id/vet_phone_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_smallest" android:hint="@string/registration_phone_number_hint" android:inputType="phone" />
+            <TextView android:id="@id/tv_we_need_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_big" android:text="@string/registration_we_need_your_phone_number_label" style="@style/DarkGrayRegularText" />
+            <TextView android:id="@id/tv_password_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:text="@string/text_password" style="@style/NavyBoldSubTitle" />
+            <com.patientaccess.validation.widget.ValidatedEditTextView android:id="@id/vet_password" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_smallest" android:hint="@string/registration_enter_password_hint" android:maxLength="@integer/password_length_limit" android:inputType="textPassword" />
+            <TextView android:id="@id/tv_password_has_to_contain_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium" android:text="@string/registration_password_has_to_contain_label" style="@style/DarkGrayRegularText" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/vg_terms_of_use" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small">
+                <androidx.appcompat.widget.AppCompatCheckBox android:theme="@style/AppTheme.CheckboxStyle" android:id="@id/ch_terms_of_use" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" />
+                <TextView android:id="@id/tv_terms_of_use" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/NavyRegularText" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/vg_marketing_email_consent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_most" android:baselineAligned="false">
+                <androidx.appcompat.widget.AppCompatCheckBox android:theme="@style/AppTheme.CheckboxStyle" android:id="@id/ch_marketing_email_consent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" />
+                <TextView android:id="@id/tv_marketing_email_consent" android:paddingTop="@dimen/padding_smallest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_marketing_email_consent_message" style="@style/NavyRegularText" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout android:id="@id/vg_button_next" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="@color/default_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/bt_create_account" android:layout_width="@dimen/registration_button_create_account_width" android:layout_margin="@dimen/registration_margin_button_next" android:text="@string/registration_create_account_button_label" style="@style/PinkButton" />
+    </FrameLayout>
+    <ProgressBar android:id="@id/progress_bar" android:visibility="gone" android:layout_width="@dimen/registration_margin_12" android:layout_height="wrap_content" android:indeterminate="true" android:layout_above="@id/vg_button_next" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/fragment_select_branches_0" android:background="@color/background_gray" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center" android:id="@id/pb_branches" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <TextView android:id="@id/tv_select_branch_title" android:background="@android:color/white" android:paddingBottom="@dimen/padding_small" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:paddingStart="@dimen/padding_medium" android:paddingEnd="@dimen/padding_medium" style="@style/NavyBoldTitle" />
+    <TextView android:id="@id/tv_select_branch_description" android:background="@android:color/white" android:paddingBottom="@dimen/padding_small" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tv_select_branch_title" android:paddingStart="@dimen/padding_medium" android:paddingEnd="@dimen/padding_medium" style="@style/DarkGrayRegularText" />
+    <View android:id="@id/divider" android:paddingTop="@dimen/padding_small" android:visibility="gone" android:layout_below="@id/tv_select_branch_description" style="@style/Divider" />
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/divider">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_branches" android:paddingTop="@dimen/padding_small" android:paddingBottom="@dimen/padding_small" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/padding_medium" android:paddingEnd="@dimen/padding_medium" />
+            <TextView android:id="@id/txt_footer" android:background="@color/background_gray" android:padding="@dimen/padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/text_appointments_type_clarification" android:layout_alignParentBottom="true" style="@style/GrayRegularText" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

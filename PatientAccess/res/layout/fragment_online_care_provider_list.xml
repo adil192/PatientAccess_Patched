@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_online_care_provider_list_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="fill_parent" android:layout_height="2.0dip" style="@style/Divider" />
+    <ProgressBar android:id="@id/pb_post_code_search" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="true" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+    <LinearLayout android:orientation="vertical" android:id="@id/online_list_container" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.patientaccess.base.view.AppointmentModeView android:id="@id/appointmentModeView" android:tag="binding_2" android:background="@color/white" android:paddingTop="@dimen/padding_medium" android:paddingBottom="@dimen/padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/padding_small" android:paddingEnd="@dimen/padding_small" />
+        <View android:layout_width="fill_parent" android:layout_height="1.0dip" style="@style/Divider" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/pc_care_provider_list" android:background="@color/background_gray" android:paddingTop="@dimen/padding_small" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/primary" android:gravity="center" android:id="@id/error_txt_vw" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_medium" android:text="@string/no_result_online_pharmacy_error" style="@style/NavyBoldSubTitle" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/bottom_sheet_fragment_container" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

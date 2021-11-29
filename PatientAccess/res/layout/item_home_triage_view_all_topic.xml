@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/item_home_triage_view_all_topic_0" android:padding="@dimen/padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/tv_home_triage_no_result" android:paddingBottom="@dimen/margin_medium" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/text_home_triage_no_results" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_goneMarginBottom="@dimen/margin_medium" style="@style/DarkGrayRegularText" />
+    <TextView android:id="@id/tv_home_triage_view_topics" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/text_home_triage_view_topics" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_home_triage_no_result" style="@style/PinkBoldText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

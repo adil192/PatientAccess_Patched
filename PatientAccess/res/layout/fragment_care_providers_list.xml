@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:tag="layout/fragment_care_providers_list_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/parent_container" android:background="@color/background_gray" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_search_mode_container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/search_container" android:paddingTop="10.0dip" android:paddingBottom="@dimen/margin_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="10.0" android:paddingStart="@dimen/margin_medium">
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/search_bar_border" android:paddingTop="@dimen/patient_care_search_box_padding" android:paddingBottom="@dimen/patient_care_search_box_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="9.0" android:paddingStart="@dimen/padding_medium" android:paddingEnd="@dimen/padding_medium">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_location_search" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <androidx.appcompat.widget.AppCompatImageButton android:id="@id/ic_location" android:background="@android:color/transparent" android:focusableInTouchMode="true" android:layout_width="18.0dip" android:layout_height="18.0dip" android:tint="@color/gray" android:layout_marginEnd="10.0dip" app:srcCompat="@drawable/ic_location_pin" />
+                        <EditText android:textSize="16.0sp" android:textColorHint="@color/search_location_view_hint_color" android:id="@id/et_location_search" android:tag="binding_1" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:inputType="textPostalAddress|textCapCharacters" android:imeOptions="actionSearch" android:layout_marginEnd="@dimen/margin_small" style="@style/NavyBoldSubTitle" />
+                        <androidx.appcompat.widget.AppCompatImageButton android:id="@id/btn_close" android:tag="binding_2" android:background="@android:color/transparent" android:padding="@dimen/search_location_view_icon_padding" android:layout_width="12.0dip" android:layout_height="12.0dip" android:tint="@color/gray" app:srcCompat="@drawable/ic_cross_gray" />
+                    </LinearLayout>
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@id/ic_gps" android:tag="binding_3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="5.0dip" android:layout_marginEnd="@dimen/margin_medium" />
+            </LinearLayout>
+            <com.patientaccess.base.view.AppointmentModeView android:id="@id/appointmentModeView" android:tag="binding_4" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" />
+        </LinearLayout>
+        <View android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="2.0dip" style="@style/Divider" />
+        <ProgressBar android:id="@id/pb_post_code_search" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="true" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+        <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.patientaccess.util.ui.TouchWrapper android:id="@id/search_bg_container" android:background="@color/background_gray" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.patientaccess.util.ui.TouchWrapper android:id="@id/error_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:background="@color/background_gray" android:visibility="visible" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/margin_medium">
+                            <TextView android:textSize="18.0sp" android:textColor="@color/primary" android:tag="binding_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_medium" style="@style/NavyBoldSubTitle" />
+                            <TextView android:textSize="16.0sp" android:textColor="@color/dark_gray" android:tag="binding_6" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </com.patientaccess.util.ui.TouchWrapper>
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/pc_care_provider_list" android:background="@color/background_gray" android:visibility="visible" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/product_affiliate_parent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium">
+                        <TextView android:textSize="18.0sp" android:id="@id/txt_product_affiliate_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/txt_product_affiliate_desc" android:lineSpacingMultiplier="1.5" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" style="@style/DarkGrayBoldRegularText" />
+                        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_prod_affiliate_list" android:background="@color/background_gray" android:visibility="visible" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" />
+                    </LinearLayout>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </com.patientaccess.util.ui.TouchWrapper>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

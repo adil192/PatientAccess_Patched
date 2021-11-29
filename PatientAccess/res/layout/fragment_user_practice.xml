@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_user_practice_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_profile_option_my_gp_practice" android:layout_marginStart="@dimen/margin_medium" style="@style/NavyBoldTitle" />
+    <View android:layout_marginTop="@dimen/margin_medium" style="@style/Divider" />
+    <ProgressBar android:id="@id/pb_practice" android:background="@color/user_session_content_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="true" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+    <androidx.core.widget.NestedScrollView android:id="@id/sv_location_change_gp_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/background_gray" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:orientation="vertical" android:id="@id/fl_gp_practice_container" android:background="@color/user_session_content_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_location_change_gp_parent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big" android:text="@string/text_gp_description" android:lineSpacingMultiplier="1.3" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" style="@style/DarkNavyRegularText" />
+                    <com.patientaccess.profile.widget.ProfileLocationView android:id="@id/location_view" android:tag="binding_1" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <androidx.cardview.widget.CardView android:orientation="vertical" android:id="@id/cv_change_gp" android:background="@android:color/white" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="@dimen/padding_big" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" app:cardCornerRadius="@dimen/radius_12" app:cardElevation="@dimen/card_elevation" app:contentPaddingBottom="@dimen/margin_big" app:contentPaddingLeft="@dimen/margin_medium" app:contentPaddingRight="@dimen/margin_medium" app:contentPaddingTop="@dimen/margin_big" style="@style/CardViewStyle">
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <TextView android:id="@id/txt_change_gp_message" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DefaultLatoRegularText" />
+                            <TextView android:id="@id/txt_change_gp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_huge" android:text="@string/text_change_gp_practice" style="@style/PinkBoldText" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/tv_no_practice" android:padding="@dimen/padding_medium" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big" android:layout_marginBottom="@dimen/margin_big" android:text="@string/text_no_practice" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" style="@style/NavyBoldTitle" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/fl_gp_service_container" android:background="@color/user_session_content_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_service_container" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/tv_practice_service_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_available_services_description" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" style="@style/DarkGrayRegularText" />
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_services" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/margin_medium" android:nestedScrollingEnabled="false" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+                </LinearLayout>
+                <ProgressBar android:layout_gravity="center" android:id="@id/pb_services" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/txt_no_service" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_big" android:layout_marginBottom="@dimen/margin_big" android:text="@string/text_no_services" style="@style/NavyBoldTitle" />
+            </FrameLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

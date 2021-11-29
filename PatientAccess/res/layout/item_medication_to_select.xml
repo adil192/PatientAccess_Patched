@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:orientation="vertical" android:tag="layout/item_medication_to_select_0" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_big" app:cardCornerRadius="@dimen/radius_12" app:contentPadding="@dimen/padding_big" style="@style/CardViewStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.appcompat.widget.AppCompatCheckBox android:id="@id/cb_select" android:tag="binding_1" android:background="@android:color/transparent" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/bg_select_medication" android:layout_alignParentEnd="true" />
+        <TextView android:id="@id/tv_medication_name" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/margin_big" android:layout_toStartOf="@id/cb_select" style="@style/NavyBoldTitle" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/medications_details_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_below="@id/tv_medication_name">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_drug" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_smallest" android:layout_marginEnd="@dimen/margin_small" app:srcCompat="@drawable/ic_drug" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/tv_medication_issued_date" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DarkNavyRegularText" />
+                <TextView android:id="@id/tv_medication_quantity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_smallest" style="@style/DarkNavyRegularText" />
+                <TextView android:id="@id/tv_medication_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_smallest" style="@style/DarkNavyRegularText" />
+                <TextView android:id="@id/tv_medication_next_issue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_smallest" style="@style/DarkNavyRegularText" />
+                <TextView android:id="@id/tv_medication_review" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_smallest" style="@style/DarkNavyRegularText" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:id="@id/tv_medication_description" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_below="@id/medications_details_container" style="@style/DarkNavyRegularText" />
+        <TextView android:layout_gravity="center_horizontal" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_big" android:text="@string/text_prescriptions_medication_pending" android:layout_below="@id/tv_medication_description" android:layout_centerHorizontal="true" android:textAllCaps="true" style="@style/NavyBoldTitle" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

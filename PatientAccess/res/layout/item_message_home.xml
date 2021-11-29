@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:tag="layout/item_message_home_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" app:cardCornerRadius="@dimen/radius_12" app:cardElevation="@dimen/card_elevation" app:contentPaddingBottom="@dimen/padding_medium" app:contentPaddingLeft="@dimen/padding_big" app:contentPaddingRight="@dimen/home_message_card_padding_end" app:contentPaddingTop="@dimen/padding_medium" style="@style/CardViewStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/padding_big" android:paddingEnd="@dimen/padding_medium">
+        <TextView android:ellipsize="end" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginEnd="@dimen/margin_small" style="@style/NavyBoldTitle" />
+        <TextView android:ellipsize="end" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_smallest" android:maxLines="1" style="@style/DarkGrayRegularText" />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end|center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_arrow_right" />
+    <androidx.appcompat.widget.AppCompatImageView android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_small" app:srcCompat="@drawable/ic_primary_oval" />
+</androidx.cardview.widget.CardView>

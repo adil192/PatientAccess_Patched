@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/section_empty_state" android:tag="layout/home_section_no_value_0" android:visibility="visible" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="yes"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/imv_no_value" android:layout_width="@dimen/no_content_image_size" android:layout_height="@dimen/no_content_image_size" android:layout_marginTop="@dimen/margin_small" app:srcCompat="@drawable/ic_appointments_no_value" />
+    <TextView android:gravity="center" android:id="@id/tv_no_value_description" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_huge" android:text="@string/text_home_empty_appointments_message" style="@style/DarkGrayRegularText" />
+    <Button android:id="@id/btn_request_new" android:layout_height="@dimen/default_button_height" android:layout_marginTop="@dimen/margin_big" android:text="@string/text_home_empty_appointments_button" style="@style/PinkButton" />
+</LinearLayout>

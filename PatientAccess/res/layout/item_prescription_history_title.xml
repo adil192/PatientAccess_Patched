@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/request_prescription_title_font_size" android:textStyle="bold" android:textColor="@color/prescription_title_font_color" android:tag="layout/item_prescription_history_title_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/request_prescription_item_history_title_margin_top_big"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

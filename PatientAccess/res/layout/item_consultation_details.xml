@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/item_container" android:tag="layout/item_consultation_details_0" android:background="@android:color/white" android:paddingTop="@dimen/padding_medium" android:paddingBottom="@dimen/padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/padding_small" android:paddingEnd="@dimen/padding_small"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_details_header" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DarkGrayRegularText" />
+    <TextView android:textSize="@dimen/font_size_18" android:id="@id/tv_details_value" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_smallest" style="@style/NavyRegularText" />
+</LinearLayout>
